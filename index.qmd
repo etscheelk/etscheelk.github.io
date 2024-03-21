@@ -5,3 +5,17 @@ title: "etscheelk.github.io"
 This is a Quarto website.
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+::: {.grid}
+
+::: {.g-col-4}
+This column takes 1/3 of the page
+:::
+
+::: {.g-col-8}
+This column takes 2/3 of the page. 
+
+Once upon a midnight dreary while I pondered weak and weary over a many quaint and curious volume of forgotten lore, suddenly I heard a tapping, as if someone rapping at my chamber door. 
+:::
+
+:::

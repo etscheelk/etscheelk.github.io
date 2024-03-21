@@ -1,0 +1,16 @@
+---
+title: "Boids"
+
+# format:
+#     code-line-numbers: 
+---
+
+```c++
+#include <iostream>
+
+int main(int argc, char *arg[])
+{
+    std::cout << "Hello world!" << std::endl;
+    return 0;
+}
+```

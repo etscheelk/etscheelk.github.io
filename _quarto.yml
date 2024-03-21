@@ -4,17 +4,76 @@ project:
 
 website:
   title: "etscheelk.github.io"
+  # back-to-top-navigation: true
+  bread-crumbs: true
+  page-footer: 
+    border: true
+    background: secondary
+    left: "Ethan Scheelk 2024"
+    right: 
+      - icon: github
+        href: https://github.com/etscheelk/
+  sidebar:
+    border: true
+    foreground: light
+    style: floating
+    background: secondary
+    footer: "test"
+    collapse-level: 5
+    contents:
+      - section: "Home"
+        contents: 
+          - index.qmd
+          - about.qmd
+      - section: "Projects"
+        contents: 
+          - projects/overview.qmd
+          - text: "---"
+          - projects/boids.qmd
   navbar:
-    left:
+    search: false
+    pinned: true
+    background: secondary
+    right:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: "Home"
+      - href: "projects/overview.qmd"
+        text: "Previous Work"
+    # left:
+    #   - href: index.qmd
+    #     text: Home
+    #   - about.qmd
+    #   - projects.qmd
+    # style: floating
+    # alignment: left
+    # border: true
+    # pinned: true
+    # contents: 
+    #   - section: "Home"
+    #     contents:
+    #       - index.qmd
+    #   - section: "About"
+    #     contents:
+    #       - about.qmd
+    #   - section: "Projects"
+    #     contents:
+    #       - projects.qmd
+    #       - section: "Boids"
+    #         contents: projects/boids.qmd
 
 format:
   html:
     theme: cosmo
+    # theme: pandoc
     css: styles.css
     toc: true
-
+    # author: "Ethan Scheelk"
+    cap-location: bottom
+    # monobackgroundcolor: black
+    grid: 
+      # gutter-width: 69px
+      margin-width: 0px
+    backgroundcolor: Gainsboro
+    
 
 
