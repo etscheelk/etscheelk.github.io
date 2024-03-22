@@ -8,16 +8,16 @@ website:
   bread-crumbs: true
   page-footer: 
     border: true
-    background: secondary
+    # background: secondary
     left: "Ethan Scheelk 2024"
     right: 
       - icon: github
         href: https://github.com/etscheelk/
   sidebar:
     border: true
-    foreground: light
+    # foreground: light
     style: floating
-    background: secondary
+    # background: secondary
     footer: "test"
     collapse-level: 5
     contents:
@@ -33,7 +33,7 @@ website:
   navbar:
     search: false
     pinned: true
-    background: secondary
+    background: primary
     right:
       - href: index.qmd
         text: "Home"
@@ -63,7 +63,12 @@ website:
 
 format:
   html:
-    theme: cosmo
+    # https://quarto.org/docs/output-formats/html-themes.html#dark-mode
+    # theme: darkly # really good dark theme
+    theme: solar
+    # theme: slate
+    # theme: morph
+
     # theme: pandoc
     css: styles.css
     toc: true
@@ -73,7 +78,7 @@ format:
     grid: 
       # gutter-width: 69px
       margin-width: 0px
-    backgroundcolor: Gainsboro
-    
+    # backgroundcolor: Gainsboro
+
 
 

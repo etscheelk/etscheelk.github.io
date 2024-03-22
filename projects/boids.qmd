@@ -1,11 +1,8 @@
 ---
 title: "Boids"
-
-# format:
-#     code-line-numbers: 
 ---
 
-```c++
+``` cpp
 #include <iostream>
 
 int main(int argc, char *arg[])
@@ -14,3 +11,11 @@ int main(int argc, char *arg[])
     return 0;
 }
 ```
+
+# Heading 1
+
+## Subheading
+
+# Heading 2
+
+$e^{\pi i} + 1 = 0$
