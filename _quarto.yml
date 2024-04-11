@@ -78,6 +78,7 @@ format:
     grid: 
       # gutter-width: 69px
       margin-width: 0px
+      body-width: 1200px
     # backgroundcolor: Gainsboro
 
 
