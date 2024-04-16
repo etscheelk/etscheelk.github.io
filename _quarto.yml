@@ -1,12 +1,18 @@
 project:
   type: website
   output-dir: docs
-  resources: ./res/ ./projects/* ./
+  resources: ./res/
   execute-dir: project
+  render: 
+    - "*.qmd"
+    - "!projects/"
+
+# metadata-files: 
+#   - projects/
 
 website:
   title: "etscheelk.github.io"
-  # back-to-top-navigation: true
+  back-to-top-navigation: true
   bread-crumbs: true
   page-footer: 
     border: true
@@ -14,6 +20,7 @@ website:
     left: "Ethan Scheelk 2024"
     right: 
       - icon: github
+        aria-label: GitHub
         href: https://github.com/etscheelk/
   sidebar:
     border: true

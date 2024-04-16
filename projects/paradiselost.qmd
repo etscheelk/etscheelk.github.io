@@ -1,0 +1,57 @@
+::::::{.grid}
+:::{.g-col-10 .g-start-2}
+:::
+
+:::{.g-col-6}
+:::{#fig-satanfall}
+<!-- ![](res/SatanFall2.jpg) -->
+
+<embed src=res/SatanFall2.jpg width=80%> </embed>
+
+Gustave Doré - *Satan Descends Upon Earth* - Engraving 1866
+
+:::
+:::
+
+:::{.g-col-4}
+A text adventure of the Paradise Lost, focusing on the mentality and inevitability of Satan's betrayal.
+
+*Paradise Lost* is the 12-book epic poem composed in blank verse by John Milton in the mid-17th century. It greatly expands on the book of Genesis and focuses on Satan's fall, his plans in Hell, and him eventually surveying the new Earth and the Eden where God's newest creation now lives. He spies the two humans, Adam and Eve, and aims to corrupt them.
+
+Highly inspired by the text adventures featured in *The Talos Principle* and its sequel, *The Talos Principle 2*.
+
+Developed in Godot 4, which allowed simple development Additionally, Godot has visual editing, nodes for playing audio, and greater opportunity for artistic flair for less cost.
+
+[View on GitHub  <i class="bi bi-github"></i>](https://github.com/etscheelk/ParadiseLostTheAdventure)
+
+[Play on Itch.io  <i class="bi bi-keyboard"></i>](https://lalaith-meren.itch.io/paradise-lost-the-text-adventure)
+:::
+
+:::{.g-col-6}
+:::{#fig-paradiselostmenu}
+
+<!-- <embed src=res/paradisemenu.png width=90%> </embed> -->
+<!-- <iframe src=res/paradisemenu.png width=90% style="border:none;">  </iframe> -->
+<img src=res/paradisemenu.png alt="The menu of Paradise Lost: The Text Adventure" width=95%> </img>
+
+The main menu of *Paradise Lost: The Text Adventure*. 
+
+:::
+:::
+
+:::{.g-col-6}
+:::{#fig-paradiseexample}
+
+<!-- <embed src=res/paradisetext.png width=90%> </embed> -->
+<!-- <iframe src=res/paradisetext.png width=90% style="border:none;"> </iframe> -->
+<img src=res/paradisetext.png alt="An example of playing through the game" width=95%> </img>
+
+An example of playing through the game. 
+
+:::
+:::
+
+<embed src=https://lalaith-meren.itch.io/paradise-lost-the-text-adventure> </embed>
+
+
+::::::

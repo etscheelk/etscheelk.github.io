@@ -11,8 +11,6 @@ number-sections: true
 number-depth: 2
 toc-depth: 4
 engine: knitr
-resources: projects/*
-
 grid: 
     body-width: 1200px
     sidebar-width: 15%
@@ -26,7 +24,7 @@ abstract-title: "Description"
 }
 ```
 
-Projects in bold labeled with 🚧 are still under construction.
+Projects in bold labeled with 🚧 are still under construction. 
 
 # ***Programming & Computer Science***
 
@@ -40,10 +38,9 @@ Projects in bold labeled with 🚧 are still under construction.
 
 {{< include projects/dirview.qmd >}}
 
-
 ## **Cartoon Graphics Outline Shader**
 
-{{< include projects/NPRoutline.qmd >}}
+{{< include projects/NPRoutline.qmd >}} 
 
 ## **Retuna**
 
@@ -53,6 +50,10 @@ Projects in bold labeled with 🚧 are still under construction.
 
 {{< include projects/chapel.qmd >}}
 
+## **Paradise Lost: The Text Adventure**
+
+{{< include projects/paradiselost.qmd >}}
+
 ## **Dogger**
 
 {{< include projects/dogger.qmd >}}
@@ -60,22 +61,25 @@ Projects in bold labeled with 🚧 are still under construction.
 
 ## **Budgie's Adventure in Solitude** (a game)
 
-{{< include projects/budgie.qmd >}}
+{{< include projects/budgie.qmd >}}   
 
 ## Misc
 
 This is for any smaller projects I've worked on that I'll only shortly mention
 
+# ***Mathematics***
 
-# Mathematics
+## **Metrics in Topological Data Analysis**
 
-## Topological Data Analysis 
+{{< include projects/metrics.qmd >}}  
 
 ## Further
 
 # Miscellaneous 
 
 ## Writing
+
+{{< include projects/writing.qmd >}}
 
 ## Modding
 
