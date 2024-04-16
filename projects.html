@@ -6,6 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-04-15">
+<meta name="description" content="Previous Work">
 
 <title>etscheelk.github.io - Projects</title>
 <style>
@@ -65,6 +67,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -86,14 +89,18 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects/overview.html"> 
-<span class="menu-text">Previous Work</span></a>
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./projects.html"> 
+<span class="menu-text">Projects</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -106,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Projects</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./projects.html">Projects</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -141,39 +148,51 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projects.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Projects</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./projects/overview.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Overview of Projects</span></a>
   </div>
 </li>
-          <li class="px-0"><hr class="sidebar-divider hi "></li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./projects/boids.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Boids</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
     </ul>
     </div>
-<div class="quarto-sidebar-footer"><div class="sidebar-footer-item">
-<p>test</p>
-</div></div></nav>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#programming-computer-science" id="toc-programming-computer-science" class="nav-link active" data-scroll-target="#programming-computer-science"><span class="header-section-number">1</span> <strong><em>Programming &amp; Computer Science</em></strong></a>
+  <ul>
+  <li><a href="#key-notes" id="toc-key-notes" class="nav-link" data-scroll-target="#key-notes"><span class="header-section-number">1.1</span> Key Notes</a></li>
+  <li><a href="#parallel-boids" id="toc-parallel-boids" class="nav-link" data-scroll-target="#parallel-boids"><span class="header-section-number">1.2</span> <strong>Parallel Boids</strong></a>
+  <ul class="collapse">
+  <li><a href="#aims" id="toc-aims" class="nav-link" data-scroll-target="#aims">Aims</a></li>
+  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools">Tools</a></li>
+  <li><a href="#edupar2024-submission" id="toc-edupar2024-submission" class="nav-link" data-scroll-target="#edupar2024-submission">EduPar2024 Submission</a></li>
+  </ul></li>
+  <li><a href="#dirview" id="toc-dirview" class="nav-link" data-scroll-target="#dirview"><span class="header-section-number">1.3</span> <strong>dirview</strong> 🚧</a></li>
+  <li><a href="#cartoon-graphics-outline-shader" id="toc-cartoon-graphics-outline-shader" class="nav-link" data-scroll-target="#cartoon-graphics-outline-shader"><span class="header-section-number">1.4</span> <strong>Cartoon Graphics Outline Shader</strong></a></li>
+  <li><a href="#retuna" id="toc-retuna" class="nav-link" data-scroll-target="#retuna"><span class="header-section-number">1.5</span> <strong>Retuna</strong></a></li>
+  <li><a href="#chapel-study-and-writing" id="toc-chapel-study-and-writing" class="nav-link" data-scroll-target="#chapel-study-and-writing"><span class="header-section-number">1.6</span> <strong>Chapel study and writing</strong> 🚧</a></li>
+  <li><a href="#dogger" id="toc-dogger" class="nav-link" data-scroll-target="#dogger"><span class="header-section-number">1.7</span> <strong>Dogger</strong></a></li>
+  <li><a href="#budgies-adventure-in-solitude-a-game" id="toc-budgies-adventure-in-solitude-a-game" class="nav-link" data-scroll-target="#budgies-adventure-in-solitude-a-game"><span class="header-section-number">1.8</span> <strong>Budgie’s Adventure in Solitude</strong> (a game)</a></li>
+  <li><a href="#misc" id="toc-misc" class="nav-link" data-scroll-target="#misc"><span class="header-section-number">1.9</span> Misc</a></li>
+  </ul></li>
+  <li><a href="#mathematics" id="toc-mathematics" class="nav-link" data-scroll-target="#mathematics"><span class="header-section-number">2</span> Mathematics</a>
+  <ul>
+  <li><a href="#topological-data-analysis" id="toc-topological-data-analysis" class="nav-link" data-scroll-target="#topological-data-analysis"><span class="header-section-number">2.1</span> Topological Data Analysis</a></li>
+  <li><a href="#further" id="toc-further" class="nav-link" data-scroll-target="#further"><span class="header-section-number">2.2</span> Further</a></li>
+  </ul></li>
+  <li><a href="#miscellaneous" id="toc-miscellaneous" class="nav-link" data-scroll-target="#miscellaneous"><span class="header-section-number">3</span> Miscellaneous</a>
+  <ul>
+  <li><a href="#writing" id="toc-writing" class="nav-link" data-scroll-target="#writing"><span class="header-section-number">3.1</span> Writing</a></li>
+  <li><a href="#modding" id="toc-modding" class="nav-link" data-scroll-target="#modding"><span class="header-section-number">3.2</span> Modding</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -183,23 +202,217 @@ ul.task-list li input[type="checkbox"] {
 <h1 class="title">Projects</h1>
 </div>
 
+<div>
+  <div class="description">
+    Previous Work
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Last updated</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 15, 2024</p>
+    </div>
+  </div>
   
     
   </div>
   
+<div>
+  <div class="abstract">
+    <div class="block-title">Description</div>
+    This is a list of projects and work that is important to me, but it does not define me entirely. You’ll find programming projects like boids, a music game, a text adventure, and a Linux CLI; then you’ll also find my other interests in Mathematics such as work I’ve done in Topological Data Analysis; further you’ll find some miscellaneous work I’m proud of, such as my 6-page poem <em>Tattered Time</em>.
+  </div>
+</div>
 
 
 </header>
 
+<nav id="TOC-body" role="doc-toc">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#programming-computer-science" id="toc-programming-computer-science"><span class="header-section-number">1</span> <strong><em>Programming &amp; Computer Science</em></strong></a>
+  <ul>
+  <li><a href="#key-notes" id="toc-key-notes"><span class="header-section-number">1.1</span> Key Notes</a></li>
+  <li><a href="#parallel-boids" id="toc-parallel-boids"><span class="header-section-number">1.2</span> <strong>Parallel Boids</strong></a>
+  <ul>
+  <li><a href="#aims" id="toc-aims">Aims</a></li>
+  <li><a href="#tools" id="toc-tools">Tools</a></li>
+  <li><a href="#edupar2024-submission" id="toc-edupar2024-submission">EduPar2024 Submission</a></li>
+  </ul></li>
+  <li><a href="#dirview" id="toc-dirview"><span class="header-section-number">1.3</span> <strong>dirview</strong> 🚧</a></li>
+  <li><a href="#cartoon-graphics-outline-shader" id="toc-cartoon-graphics-outline-shader"><span class="header-section-number">1.4</span> <strong>Cartoon Graphics Outline Shader</strong></a></li>
+  <li><a href="#retuna" id="toc-retuna"><span class="header-section-number">1.5</span> <strong>Retuna</strong></a></li>
+  <li><a href="#chapel-study-and-writing" id="toc-chapel-study-and-writing"><span class="header-section-number">1.6</span> <strong>Chapel study and writing</strong> 🚧</a></li>
+  <li><a href="#dogger" id="toc-dogger"><span class="header-section-number">1.7</span> <strong>Dogger</strong></a></li>
+  <li><a href="#budgies-adventure-in-solitude-a-game" id="toc-budgies-adventure-in-solitude-a-game"><span class="header-section-number">1.8</span> <strong>Budgie’s Adventure in Solitude</strong> (a game)</a></li>
+  <li><a href="#misc" id="toc-misc"><span class="header-section-number">1.9</span> Misc</a></li>
+  </ul></li>
+  <li><a href="#mathematics" id="toc-mathematics"><span class="header-section-number">2</span> Mathematics</a>
+  <ul>
+  <li><a href="#topological-data-analysis" id="toc-topological-data-analysis"><span class="header-section-number">2.1</span> Topological Data Analysis</a></li>
+  <li><a href="#further" id="toc-further"><span class="header-section-number">2.2</span> Further</a></li>
+  </ul></li>
+  <li><a href="#miscellaneous" id="toc-miscellaneous"><span class="header-section-number">3</span> Miscellaneous</a>
+  <ul>
+  <li><a href="#writing" id="toc-writing"><span class="header-section-number">3.1</span> Writing</a></li>
+  <li><a href="#modding" id="toc-modding"><span class="header-section-number">3.2</span> Modding</a></li>
+  </ul></li>
+  </ul>
+</nav>
+<div class="cell">
+<style type="text/css">
+#title-block-header .description {
+    display: none;
+}
+</style>
+</div>
+<p>Projects in bold labeled with 🚧 are still under construction.</p>
+<section id="programming-computer-science" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> <strong><em>Programming &amp; Computer Science</em></strong></h1>
+<section id="key-notes" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="key-notes"><span class="header-section-number">1.1</span> Key Notes</h2>
+</section>
+<section id="parallel-boids" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="parallel-boids"><span class="header-section-number">1.2</span> <strong>Parallel Boids</strong></h2>
+<!-- ## **Parallel Boids** -->
+<div class="grid">
+<div class="g-col-10 g-start-2">
+<p>This is a project I undertook in COMP445 Parallel and Distributed Computer with Professor Libby Shoop. <a href="#fig-boids" class="quarto-xref">Figure&nbsp;1</a> shows an example run of the final product, where 512 boids are being simulated on 4 threads, each boid colored with respect to thread.</p>
+</div>
+</div>
+<div id="fig-boids" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-boids-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<embed src="res/boids.png" width="90%">
 
-<p>This is the top level domain on my projects.</p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-boids-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Simulation of 512 boids on 4 threads. Each boid is colored with respect to the thread calculating their position.
+</figcaption>
+</figure>
+</div>
+<div class="grid">
+<div class="g-col-6">
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/Xt0CV75LxJM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</div>
+<div class="g-col-6">
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/P5OwPPc-JX4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</div>
+</div>
+<section id="aims" class="level4">
+<h4 class="anchored" data-anchor-id="aims">Aims</h4>
+<div class="grid">
+<div class="g-col-8 g-start-3">
+<p>I enjoy parallel programming, yet it can be difficult to achieve the visual understanding and satisfaction of a given algorithm. Therefore, my aim was to implement <a href="https://en.wikipedia.org/wiki/Boids">Boids</a> in parallel and visualize them. My greatest motivation was that I wished to visually observe the speedup of the simulation when rendering in parallel.</p>
+<p>I used variety of parallelization paradigms and implemented the algorithm in C/C++.</p>
+</div>
+</div>
+</section>
+<section id="tools" class="level4">
+<h4 class="anchored" data-anchor-id="tools">Tools</h4>
+<div class="grid">
+<div class="g-col-8 g-start-3">
+<p>I use</p>
+</div>
+</div>
+</section>
+<section id="edupar2024-submission" class="level4">
+<h4 class="anchored" data-anchor-id="edupar2024-submission">EduPar2024 Submission</h4>
+<div class="grid">
+<div class="g-col-8 g-start-3">
+<p>Professor Libby Shoop and I turned this project into a submission to EduPar2024 as a Peachy Parallel Assignment, intended to help educate future parallel programming students.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="dirview" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="dirview"><span class="header-section-number">1.3</span> <strong>dirview</strong> 🚧</h2>
+<div class="grid">
+<div class="g-col-10 g-start-2">
+<p>When trying to think of an excuse to work in C and the Linux environemnt, I came across the annoying quibble of how incessant it can be to navidate with <code>cd</code> and <code>ls</code> repeatedly when you don’t know where anything is.</p>
+<p>So I had the idea of a visual directory explorer where the user can explore</p>
+<p>Test</p>
+</div>
+</div>
+</section>
+<section id="cartoon-graphics-outline-shader" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="cartoon-graphics-outline-shader"><span class="header-section-number">1.4</span> <strong>Cartoon Graphics Outline Shader</strong></h2>
+<p>something</p>
+</section>
+<section id="retuna" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="retuna"><span class="header-section-number">1.5</span> <strong>Retuna</strong></h2>
+<p>Something</p>
+<p>more more more!</p>
+</section>
+<section id="chapel-study-and-writing" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="chapel-study-and-writing"><span class="header-section-number">1.6</span> <strong>Chapel study and writing</strong> 🚧</h2>
+<!-- ## **Chapel study and writing** 🚧 -->
+<p>Due to my interest in further education in parallel programming</p>
+</section>
+<section id="dogger" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="dogger"><span class="header-section-number">1.7</span> <strong>Dogger</strong></h2>
+<!-- ## **Dogger** -->
+<p>Dogger is a version of Frogger where you play as a dog who must retrieve tennis balls your owner has thrown too far.</p>
+</section>
+<section id="budgies-adventure-in-solitude-a-game" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="budgies-adventure-in-solitude-a-game"><span class="header-section-number">1.8</span> <strong>Budgie’s Adventure in Solitude</strong> (a game)</h2>
+<!-- ## **Budgie's Adventure in Solitude** (a game) -->
+<p><em>Budgie</em> is a platformer game I made the junior year of my highschool in Unity as part of a video game development course. This was the first programming project I ever worked on. I additionally did all the art and animation.</p>
+<div id="fig-budgie" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-budgie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<embed src="res/Budgie.jpg" width="80%">
+
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-budgie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Screenshot of Budgie’s Adventure in Solitude
+</figcaption>
+</figure>
+</div>
+<!-- ![Screenshot of Budgie's Adventure in Solitude.](res/Budgie.jpg) -->
+<!-- Exact same as using embed -->
+<!-- ::: {#fig-budgie2}
+<center>
+    <img src=res/Budgie.jpg alt="test" width=80%>
+</center>
+
+test caption
+
+::: -->
+<p>Air jumps cost health and all diamonds must be collected before the player can exit via the door. Why are they called Budgie, Robert, and Michael? I don’t know.</p>
+<p>It was super valuable to gain this experience programming at this age because my high school did not have any other programming courses</p>
+</section>
+<section id="misc" class="level2" data-number="1.9">
+<h2 data-number="1.9" class="anchored" data-anchor-id="misc"><span class="header-section-number">1.9</span> Misc</h2>
+<p>This is for any smaller projects I’ve worked on that I’ll only shortly mention</p>
+</section>
+</section>
+<section id="mathematics" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Mathematics</h1>
+<section id="topological-data-analysis" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="topological-data-analysis"><span class="header-section-number">2.1</span> Topological Data Analysis</h2>
+</section>
+<section id="further" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="further"><span class="header-section-number">2.2</span> Further</h2>
+</section>
+</section>
+<section id="miscellaneous" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Miscellaneous</h1>
+<section id="writing" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="writing"><span class="header-section-number">3.1</span> Writing</h2>
+</section>
+<section id="modding" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="modding"><span class="header-section-number">3.2</span> Modding</h2>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -636,4 +849,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

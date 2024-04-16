@@ -1,0 +1,68 @@
+<!-- ## **Parallel Boids** -->
+
+::::::{.grid}
+:::{.g-col-10 .g-start-2}
+
+This is a project I undertook in COMP445 Parallel and Distributed Computer with Professor Libby Shoop. @fig-boids shows an example run of the final product, where 512 boids are being simulated on 4 threads, each boid colored with respect to thread. 
+
+:::
+::::::
+
+:::{#fig-boids}
+
+<embed src=res/boids.png width=90%> </embed>
+
+Simulation of 512 boids on 4 threads. Each boid is colored with respect to the thread calculating their position. 
+
+:::
+
+
+::::::{.grid}
+:::{.g-col-6}
+
+{{< video https://youtu.be/Xt0CV75LxJM >}}
+
+:::
+
+
+:::{.g-col-6}
+
+{{< video https://youtu.be/P5OwPPc-JX4 >}}
+
+:::
+::::::
+
+#### Aims
+
+::::::{.grid}
+:::{.g-col-8 .g-start-3}
+
+I enjoy parallel programming, yet it can be difficult to achieve the visual understanding and satisfaction of a given algorithm. Therefore, my aim was to implement [Boids](https://en.wikipedia.org/wiki/Boids) in parallel and visualize them. My greatest motivation was that I wished to visually observe the speedup of the simulation when rendering in parallel. 
+
+I used variety of parallelization paradigms and implemented the algorithm in C/C++. 
+
+
+:::
+::::::
+
+
+#### Tools
+
+::::::{.grid}
+:::{.g-col-8 .g-start-3}
+
+I use
+
+:::
+::::::
+
+
+#### EduPar2024 Submission
+
+::::::{.grid}
+:::{.g-col-8 .g-start-3}
+
+Professor Libby Shoop and I turned this project into a submission to EduPar2024 as a Peachy Parallel Assignment, intended to help educate future parallel programming students.
+
+:::
+::::::
