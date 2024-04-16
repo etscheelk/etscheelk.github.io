@@ -1,5 +1,0 @@
----
-title: Overview of Projects
----
-
-Project overview page describing it. 

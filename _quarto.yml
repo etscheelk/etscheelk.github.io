@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources: ./res/ ./projects/* ./
+  execute-dir: project
 
 website:
   title: "etscheelk.github.io"
@@ -18,27 +20,29 @@ website:
     # foreground: light
     style: floating
     # background: secondary
-    footer: "test"
     collapse-level: 5
     contents:
       - section: "Home"
         contents: 
           - index.qmd
           - about.qmd
-      - section: "Projects"
-        contents: 
-          - projects/overview.qmd
-          - text: "---"
-          - projects/boids.qmd
+      - projects.qmd
+      # - section: "Projects"
+      #   contents: 
+      #     - projects/overview.qmd
+      #     - text: "---"
+      #     - projects/boids.qmd
   navbar:
     search: false
     pinned: true
     background: primary
-    right:
+    left:
       - href: index.qmd
         text: "Home"
-      - href: "projects/overview.qmd"
-        text: "Previous Work"
+      - href: about.qmd
+        text: "About"
+      - href: "projects.qmd"
+        text: "Projects"
     # left:
     #   - href: index.qmd
     #     text: Home
@@ -60,7 +64,8 @@ website:
     #       - projects.qmd
     #       - section: "Boids"
     #         contents: projects/boids.qmd
-
+execute: 
+  freeze: false
 format:
   html:
     # https://quarto.org/docs/output-formats/html-themes.html#dark-mode
@@ -79,6 +84,7 @@ format:
       # gutter-width: 69px
       margin-width: 0px
       body-width: 1200px
+    smooth-scroll: true
     # backgroundcolor: Gainsboro
 
 

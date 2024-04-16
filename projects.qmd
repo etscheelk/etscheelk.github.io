@@ -1,5 +1,81 @@
 ---
-title: "Projects"
+title: Projects
+date: 2024-04-15
+description: Previous Work
+# title-block-banner: "blue"
+published-title: Last updated
+toc: true
+toc-location: left-body
+toc-title: "Contents"
+number-sections: true
+number-depth: 2
+toc-depth: 4
+engine: knitr
+resources: projects/*
+
+grid: 
+    body-width: 1200px
+    sidebar-width: 15%
+abstract: "This is a list of projects and work that is important to me, but it does not define me entirely. You'll find programming projects like boids, a music game, a text adventure, and a Linux CLI; then you'll also find my other interests in Mathematics such as work I've done in Topological Data Analysis; further you'll find some miscellaneous work I'm proud of, such as my 6-page poem *Tattered Time*."
+abstract-title: "Description"
 ---
 
-This is the top level domain on my projects.
+```{css, echo=FALSE}
+#title-block-header .description {
+    display: none;
+}
+```
+
+Projects in bold labeled with 🚧 are still under construction.
+
+# ***Programming & Computer Science***
+
+## Key Notes
+
+## **Parallel Boids**
+
+{{< include projects/boids.qmd >}}
+
+## **dirview** 🚧
+
+{{< include projects/dirview.qmd >}}
+
+
+## **Cartoon Graphics Outline Shader**
+
+{{< include projects/NPRoutline.qmd >}}
+
+## **Retuna**
+
+{{< include projects/retuna.qmd >}}
+
+## **Chapel study and writing** 🚧
+
+{{< include projects/chapel.qmd >}}
+
+## **Dogger**
+
+{{< include projects/dogger.qmd >}}
+
+
+## **Budgie's Adventure in Solitude** (a game)
+
+{{< include projects/budgie.qmd >}}
+
+## Misc
+
+This is for any smaller projects I've worked on that I'll only shortly mention
+
+
+# Mathematics
+
+## Topological Data Analysis 
+
+## Further
+
+# Miscellaneous 
+
+## Writing
+
+## Modding
+
