@@ -1,1 +1,46 @@
-something
+<!-- ## Writing -->
+
+- I've done some of my own creative writing. 
+- I started writing poetry fall of my senior year of college during finals as an
+interesting way to procrastinate my Math and Computer Science finals and projects
+
+### Tattered Time, or That Starred Ensign
+
+- *Tattered Time* is my longest piece, six pages of two columns.
+- In terms of style, it is my own, but inspired in short line length by lyrics written by Anneke van Giersbergen
+- An additional inspiration was learning some amount of Welsh and its medieval literature. In form it is unlike their literature, yet echoes some themes such as prophecy of oppression. 
+
+::: {#fig-tattered-time}
+
+<embed src="./res/TatteredTime.pdf#view=FitB" width=80% height=800px> </embed>
+
+Tattered Time, or That Starred Ensign
+
+:::
+
+### Time (a sestina)
+
+- This a sestina, a peculiar poetical form from Italy, where line-ending words are repeated and permuted under a certain pattern.
+- This was not easy to write, but it is interested and I'd be curious to have another try so many years after this was written.
+- I wrote this particular one as part of a creative writing course. 
+
+::: {#fig-time-sestina}
+
+<embed src="./res/Time v2-Mine-2024-04-10.pdf#view=FitB" width=80% height=800px> </embed>
+
+Time, a sestina
+
+:::
+
+### Creation Myth
+
+- This poem was created under the idea of a being that is immortal (yet not invincible) living forever and seeing everything the universe can offer, yet still of fallible, human memory.
+- I wrote this and rewrote it under revision as part of the same creative writing course. 
+
+::: {#fig-creation-myth}
+
+<embed src="./res/Creation Myth.pdf#view=FitB" width=80% height=800px> </embed>
+
+Creation Myth
+
+:::

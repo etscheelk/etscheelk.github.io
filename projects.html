@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -173,18 +202,24 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#cartoon-graphics-outline-shader" id="toc-cartoon-graphics-outline-shader" class="nav-link" data-scroll-target="#cartoon-graphics-outline-shader"><span class="header-section-number">1.4</span> <strong>Cartoon Graphics Outline Shader</strong></a></li>
   <li><a href="#retuna" id="toc-retuna" class="nav-link" data-scroll-target="#retuna"><span class="header-section-number">1.5</span> <strong>Retuna</strong></a></li>
   <li><a href="#chapel-study-and-writing" id="toc-chapel-study-and-writing" class="nav-link" data-scroll-target="#chapel-study-and-writing"><span class="header-section-number">1.6</span> <strong>Chapel study and writing</strong> 🚧</a></li>
-  <li><a href="#dogger" id="toc-dogger" class="nav-link" data-scroll-target="#dogger"><span class="header-section-number">1.7</span> <strong>Dogger</strong></a></li>
-  <li><a href="#budgies-adventure-in-solitude-a-game" id="toc-budgies-adventure-in-solitude-a-game" class="nav-link" data-scroll-target="#budgies-adventure-in-solitude-a-game"><span class="header-section-number">1.8</span> <strong>Budgie’s Adventure in Solitude</strong> (a game)</a></li>
-  <li><a href="#misc" id="toc-misc" class="nav-link" data-scroll-target="#misc"><span class="header-section-number">1.9</span> Misc</a></li>
+  <li><a href="#paradise-lost-the-text-adventure" id="toc-paradise-lost-the-text-adventure" class="nav-link" data-scroll-target="#paradise-lost-the-text-adventure"><span class="header-section-number">1.7</span> <strong>Paradise Lost: The Text Adventure</strong></a></li>
+  <li><a href="#dogger" id="toc-dogger" class="nav-link" data-scroll-target="#dogger"><span class="header-section-number">1.8</span> <strong>Dogger</strong></a></li>
+  <li><a href="#budgies-adventure-in-solitude-a-game" id="toc-budgies-adventure-in-solitude-a-game" class="nav-link" data-scroll-target="#budgies-adventure-in-solitude-a-game"><span class="header-section-number">1.9</span> <strong>Budgie’s Adventure in Solitude</strong> (a game)</a></li>
+  <li><a href="#misc" id="toc-misc" class="nav-link" data-scroll-target="#misc"><span class="header-section-number">1.10</span> Misc</a></li>
   </ul></li>
-  <li><a href="#mathematics" id="toc-mathematics" class="nav-link" data-scroll-target="#mathematics"><span class="header-section-number">2</span> Mathematics</a>
+  <li><a href="#mathematics" id="toc-mathematics" class="nav-link" data-scroll-target="#mathematics"><span class="header-section-number">2</span> <strong><em>Mathematics</em></strong></a>
   <ul>
-  <li><a href="#topological-data-analysis" id="toc-topological-data-analysis" class="nav-link" data-scroll-target="#topological-data-analysis"><span class="header-section-number">2.1</span> Topological Data Analysis</a></li>
+  <li><a href="#metrics-in-topological-data-analysis" id="toc-metrics-in-topological-data-analysis" class="nav-link" data-scroll-target="#metrics-in-topological-data-analysis"><span class="header-section-number">2.1</span> <strong>Metrics in Topological Data Analysis</strong></a></li>
   <li><a href="#further" id="toc-further" class="nav-link" data-scroll-target="#further"><span class="header-section-number">2.2</span> Further</a></li>
   </ul></li>
   <li><a href="#miscellaneous" id="toc-miscellaneous" class="nav-link" data-scroll-target="#miscellaneous"><span class="header-section-number">3</span> Miscellaneous</a>
   <ul>
-  <li><a href="#writing" id="toc-writing" class="nav-link" data-scroll-target="#writing"><span class="header-section-number">3.1</span> Writing</a></li>
+  <li><a href="#writing" id="toc-writing" class="nav-link" data-scroll-target="#writing"><span class="header-section-number">3.1</span> Writing</a>
+  <ul class="collapse">
+  <li><a href="#tattered-time-or-that-starred-ensign" id="toc-tattered-time-or-that-starred-ensign" class="nav-link" data-scroll-target="#tattered-time-or-that-starred-ensign">Tattered Time, or That Starred Ensign</a></li>
+  <li><a href="#time-a-sestina" id="toc-time-a-sestina" class="nav-link" data-scroll-target="#time-a-sestina">Time (a sestina)</a></li>
+  <li><a href="#creation-myth" id="toc-creation-myth" class="nav-link" data-scroll-target="#creation-myth">Creation Myth</a></li>
+  </ul></li>
   <li><a href="#modding" id="toc-modding" class="nav-link" data-scroll-target="#modding"><span class="header-section-number">3.2</span> Modding</a></li>
   </ul></li>
   </ul>
@@ -249,18 +284,24 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#cartoon-graphics-outline-shader" id="toc-cartoon-graphics-outline-shader"><span class="header-section-number">1.4</span> <strong>Cartoon Graphics Outline Shader</strong></a></li>
   <li><a href="#retuna" id="toc-retuna"><span class="header-section-number">1.5</span> <strong>Retuna</strong></a></li>
   <li><a href="#chapel-study-and-writing" id="toc-chapel-study-and-writing"><span class="header-section-number">1.6</span> <strong>Chapel study and writing</strong> 🚧</a></li>
-  <li><a href="#dogger" id="toc-dogger"><span class="header-section-number">1.7</span> <strong>Dogger</strong></a></li>
-  <li><a href="#budgies-adventure-in-solitude-a-game" id="toc-budgies-adventure-in-solitude-a-game"><span class="header-section-number">1.8</span> <strong>Budgie’s Adventure in Solitude</strong> (a game)</a></li>
-  <li><a href="#misc" id="toc-misc"><span class="header-section-number">1.9</span> Misc</a></li>
+  <li><a href="#paradise-lost-the-text-adventure" id="toc-paradise-lost-the-text-adventure"><span class="header-section-number">1.7</span> <strong>Paradise Lost: The Text Adventure</strong></a></li>
+  <li><a href="#dogger" id="toc-dogger"><span class="header-section-number">1.8</span> <strong>Dogger</strong></a></li>
+  <li><a href="#budgies-adventure-in-solitude-a-game" id="toc-budgies-adventure-in-solitude-a-game"><span class="header-section-number">1.9</span> <strong>Budgie’s Adventure in Solitude</strong> (a game)</a></li>
+  <li><a href="#misc" id="toc-misc"><span class="header-section-number">1.10</span> Misc</a></li>
   </ul></li>
-  <li><a href="#mathematics" id="toc-mathematics"><span class="header-section-number">2</span> Mathematics</a>
+  <li><a href="#mathematics" id="toc-mathematics"><span class="header-section-number">2</span> <strong><em>Mathematics</em></strong></a>
   <ul>
-  <li><a href="#topological-data-analysis" id="toc-topological-data-analysis"><span class="header-section-number">2.1</span> Topological Data Analysis</a></li>
+  <li><a href="#metrics-in-topological-data-analysis" id="toc-metrics-in-topological-data-analysis"><span class="header-section-number">2.1</span> <strong>Metrics in Topological Data Analysis</strong></a></li>
   <li><a href="#further" id="toc-further"><span class="header-section-number">2.2</span> Further</a></li>
   </ul></li>
   <li><a href="#miscellaneous" id="toc-miscellaneous"><span class="header-section-number">3</span> Miscellaneous</a>
   <ul>
-  <li><a href="#writing" id="toc-writing"><span class="header-section-number">3.1</span> Writing</a></li>
+  <li><a href="#writing" id="toc-writing"><span class="header-section-number">3.1</span> Writing</a>
+  <ul>
+  <li><a href="#tattered-time-or-that-starred-ensign" id="toc-tattered-time-or-that-starred-ensign">Tattered Time, or That Starred Ensign</a></li>
+  <li><a href="#time-a-sestina" id="toc-time-a-sestina">Time (a sestina)</a></li>
+  <li><a href="#creation-myth" id="toc-creation-myth">Creation Myth</a></li>
+  </ul></li>
   <li><a href="#modding" id="toc-modding"><span class="header-section-number">3.2</span> Modding</a></li>
   </ul></li>
   </ul>
@@ -355,13 +396,73 @@ Figure&nbsp;1: Simulation of 512 boids on 4 threads. Each boid is colored with r
 <!-- ## **Chapel study and writing** 🚧 -->
 <p>Due to my interest in further education in parallel programming</p>
 </section>
-<section id="dogger" class="level2" data-number="1.7">
-<h2 data-number="1.7" class="anchored" data-anchor-id="dogger"><span class="header-section-number">1.7</span> <strong>Dogger</strong></h2>
+<section id="paradise-lost-the-text-adventure" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="paradise-lost-the-text-adventure"><span class="header-section-number">1.7</span> <strong>Paradise Lost: The Text Adventure</strong></h2>
+<div class="grid">
+<div class="g-col-10 g-start-2">
+
+</div>
+<div class="g-col-6">
+<div id="fig-satanfall" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-satanfall-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<!-- ![](res/SatanFall2.jpg) -->
+<embed src="res/SatanFall2.jpg" width="80%">
+
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-satanfall-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Gustave Doré - <em>Satan Descends Upon Earth</em> - Engraving 1866
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="g-col-4">
+<p>A text adventure of the Paradise Lost, focusing on the mentality and inevitability of Satan’s betrayal.</p>
+<p><em>Paradise Lost</em> is the 12-book epic poem composed in blank verse by John Milton in the mid-17th century. It greatly expands on the book of Genesis and focuses on Satan’s fall, his plans in Hell, and him eventually surveying the new Earth and the Eden where God’s newest creation now lives. He spies the two humans, Adam and Eve, and aims to corrupt them.</p>
+<p>Highly inspired by the text adventures featured in <em>The Talos Principle</em> and its sequel, <em>The Talos Principle 2</em>.</p>
+<p>Developed in Godot 4, which allowed simple development Additionally, Godot has visual editing, nodes for playing audio, and greater opportunity for artistic flair for less cost.</p>
+<p><a href="https://github.com/etscheelk/ParadiseLostTheAdventure">View on GitHub <i class="bi bi-github"></i></a></p>
+<p><a href="https://lalaith-meren.itch.io/paradise-lost-the-text-adventure">Play on Itch.io <i class="bi bi-keyboard"></i></a></p>
+</div>
+<div class="g-col-6">
+<div id="fig-paradiselostmenu" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-paradiselostmenu-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<!-- <embed src=res/paradisemenu.png width=90%> </embed> -->
+<!-- <iframe src=res/paradisemenu.png width=90% style="border:none;">  </iframe> -->
+<p><img src="res/paradisemenu.png" alt="The menu of Paradise Lost: The Text Adventure" width="95%" class="figure-img"> </p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-paradiselostmenu-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: The main menu of <em>Paradise Lost: The Text Adventure</em>.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="g-col-6">
+<div id="fig-paradiseexample" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-paradiseexample-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<!-- <embed src=res/paradisetext.png width=90%> </embed> -->
+<!-- <iframe src=res/paradisetext.png width=90% style="border:none;"> </iframe> -->
+<p><img src="res/paradisetext.png" alt="An example of playing through the game" width="95%" class="figure-img"> </p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-paradiseexample-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: An example of playing through the game.
+</figcaption>
+</figure>
+</div>
+</div>
+<embed src="https://lalaith-meren.itch.io/paradise-lost-the-text-adventure">
+
+</div>
+</section>
+<section id="dogger" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="dogger"><span class="header-section-number">1.8</span> <strong>Dogger</strong></h2>
 <!-- ## **Dogger** -->
 <p>Dogger is a version of Frogger where you play as a dog who must retrieve tennis balls your owner has thrown too far.</p>
 </section>
-<section id="budgies-adventure-in-solitude-a-game" class="level2" data-number="1.8">
-<h2 data-number="1.8" class="anchored" data-anchor-id="budgies-adventure-in-solitude-a-game"><span class="header-section-number">1.8</span> <strong>Budgie’s Adventure in Solitude</strong> (a game)</h2>
+<section id="budgies-adventure-in-solitude-a-game" class="level2" data-number="1.9">
+<h2 data-number="1.9" class="anchored" data-anchor-id="budgies-adventure-in-solitude-a-game"><span class="header-section-number">1.9</span> <strong>Budgie’s Adventure in Solitude</strong> (a game)</h2>
 <!-- ## **Budgie's Adventure in Solitude** (a game) -->
 <p><em>Budgie</em> is a platformer game I made the junior year of my highschool in Unity as part of a video game development course. This was the first programming project I ever worked on. I additionally did all the art and animation.</p>
 <div id="fig-budgie" class="quarto-figure quarto-figure-center quarto-float anchored">
@@ -371,7 +472,7 @@ Figure&nbsp;1: Simulation of 512 boids on 4 threads. Each boid is colored with r
 
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-budgie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Screenshot of Budgie’s Adventure in Solitude
+Figure&nbsp;5: Screenshot of Budgie’s Adventure in Solitude
 </figcaption>
 </figure>
 </div>
@@ -388,15 +489,22 @@ test caption
 <p>Air jumps cost health and all diamonds must be collected before the player can exit via the door. Why are they called Budgie, Robert, and Michael? I don’t know.</p>
 <p>It was super valuable to gain this experience programming at this age because my high school did not have any other programming courses</p>
 </section>
-<section id="misc" class="level2" data-number="1.9">
-<h2 data-number="1.9" class="anchored" data-anchor-id="misc"><span class="header-section-number">1.9</span> Misc</h2>
+<section id="misc" class="level2" data-number="1.10">
+<h2 data-number="1.10" class="anchored" data-anchor-id="misc"><span class="header-section-number">1.10</span> Misc</h2>
 <p>This is for any smaller projects I’ve worked on that I’ll only shortly mention</p>
 </section>
 </section>
 <section id="mathematics" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Mathematics</h1>
-<section id="topological-data-analysis" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="topological-data-analysis"><span class="header-section-number">2.1</span> Topological Data Analysis</h2>
+<h1 data-number="2"><span class="header-section-number">2</span> <strong><em>Mathematics</em></strong></h1>
+<section id="metrics-in-topological-data-analysis" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="metrics-in-topological-data-analysis"><span class="header-section-number">2.1</span> <strong>Metrics in Topological Data Analysis</strong></h2>
+<!-- ## Metrics and Topological Data Analysis -->
+<div class="grid">
+<div class="g-col-10 g-start-2">
+<p>Topology is a field of mathematics concerned with the fundamental description of mathematic “objects”, quantifying and comparing their shape and relationship. More physically, topology is about the relationship of objects, such as the number of holes and contained voids, and how one can continuously deform object <span class="math inline">\(A\)</span> to become object <span class="math inline">\(B\)</span> without any cutting or gluing.</p>
+<p>The most famous example of this problem is the torus (e.g.&nbsp;donut) and the coffee cup. Topologically, they are the same shape!</p>
+</div>
+</div>
 </section>
 <section id="further" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="further"><span class="header-section-number">2.2</span> Further</h2>
@@ -406,6 +514,67 @@ test caption
 <h1 data-number="3"><span class="header-section-number">3</span> Miscellaneous</h1>
 <section id="writing" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="writing"><span class="header-section-number">3.1</span> Writing</h2>
+<!-- ## Writing -->
+<ul>
+<li>I’ve done some of my own creative writing.</li>
+<li>I started writing poetry fall of my senior year of college during finals as an interesting way to procrastinate my Math and Computer Science finals and projects</li>
+</ul>
+<section id="tattered-time-or-that-starred-ensign" class="level3">
+<h3 class="anchored" data-anchor-id="tattered-time-or-that-starred-ensign">Tattered Time, or That Starred Ensign</h3>
+<ul>
+<li><em>Tattered Time</em> is my longest piece, six pages of two columns.</li>
+<li>In terms of style, it is my own, but inspired in short line length by lyrics written by Anneke van Giersbergen</li>
+<li>An additional inspiration was learning some amount of Welsh and its medieval literature. In form it is unlike their literature, yet echoes some themes such as prophecy of oppression.</li>
+</ul>
+<div id="fig-tattered-time" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tattered-time-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<embed src="./res/TatteredTime.pdf#view=FitB" width="80%" height="800px">
+
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tattered-time-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Tattered Time, or That Starred Ensign
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="time-a-sestina" class="level3">
+<h3 class="anchored" data-anchor-id="time-a-sestina">Time (a sestina)</h3>
+<ul>
+<li>This a sestina, a peculiar poetical form from Italy, where line-ending words are repeated and permuted under a certain pattern.</li>
+<li>This was not easy to write, but it is interested and I’d be curious to have another try so many years after this was written.</li>
+<li>I wrote this particular one as part of a creative writing course.</li>
+</ul>
+<div id="fig-time-sestina" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-time-sestina-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<embed src="./res/Time v2-Mine-2024-04-10.pdf#view=FitB" width="80%" height="800px">
+
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-time-sestina-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: Time, a sestina
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="creation-myth" class="level3">
+<h3 class="anchored" data-anchor-id="creation-myth">Creation Myth</h3>
+<ul>
+<li>This poem was created under the idea of a being that is immortal (yet not invincible) living forever and seeing everything the universe can offer, yet still of fallible, human memory.</li>
+<li>I wrote this and rewrote it under revision as part of the same creative writing course.</li>
+</ul>
+<div id="fig-creation-myth" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-creation-myth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<embed src="./res/Creation Myth.pdf#view=FitB" width="80%" height="800px">
+
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-creation-myth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8: Creation Myth
+</figcaption>
+</figure>
+</div>
+</section>
 </section>
 <section id="modding" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="modding"><span class="header-section-number">3.2</span> Modding</h2>
@@ -414,7 +583,7 @@ test caption
 </section>
 </section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -837,7 +1006,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/etscheelk/">
-      <i class="bi bi-github" role="img">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
     </a>
   </li>  

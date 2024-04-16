@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "etscheelk.github.io",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\nThis column takes 1/3 of the page\n\n\nThis column takes 2/3 of the page.\nOnce upon a midnight dreary while I pondered weak and weary over a many quaint and curious volume of forgotten lore, suddenly I heard a tapping, as if someone rapping at my chamber door.",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\nThis column takes 1/3 of the page\n\n\nThis column takes 2/3 of the page.\nOnce upon a midnight dreary while I pondered weak and weary over a many quaint and curious volume of forgotten lore, suddenly I heard a tapping, as if someone rapping at my chamber door.\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Home",
       "etscheelk.github.io"
@@ -22,7 +22,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site",
+    "text": "About this site\n\n\n\n Back to top",
     "crumbs": [
       "Home",
       "About"
@@ -33,7 +33,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "1 Programming & Computer Science\n  \n  1.1 Key Notes\n  1.2 Parallel Boids\n  \n  Aims\n  Tools\n  EduPar2024 Submission\n  \n  1.3 dirview 🚧\n  1.4 Cartoon Graphics Outline Shader\n  1.5 Retuna\n  1.6 Chapel study and writing 🚧\n  1.7 Dogger\n  1.8 Budgie’s Adventure in Solitude (a game)\n  1.9 Misc\n  \n  2 Mathematics\n  \n  2.1 Topological Data Analysis\n  2.2 Further\n  \n  3 Miscellaneous\n  \n  3.1 Writing\n  3.2 Modding\nProjects in bold labeled with 🚧 are still under construction.",
+    "text": "1 Programming & Computer Science\n  \n  1.1 Key Notes\n  1.2 Parallel Boids\n  \n  Aims\n  Tools\n  EduPar2024 Submission\n  \n  1.3 dirview 🚧\n  1.4 Cartoon Graphics Outline Shader\n  1.5 Retuna\n  1.6 Chapel study and writing 🚧\n  1.7 Paradise Lost: The Text Adventure\n  1.8 Dogger\n  1.9 Budgie’s Adventure in Solitude (a game)\n  1.10 Misc\n  \n  2 Mathematics\n  \n  2.1 Metrics in Topological Data Analysis\n  2.2 Further\n  \n  3 Miscellaneous\n  \n  3.1 Writing\n  \n  Tattered Time, or That Starred Ensign\n  Time (a sestina)\n  Creation Myth\n  \n  3.2 Modding\nProjects in bold labeled with 🚧 are still under construction.",
     "crumbs": [
       "Home",
       "Projects"
@@ -106,11 +106,22 @@
     ]
   },
   {
+    "objectID": "projects.html#paradise-lost-the-text-adventure",
+    "href": "projects.html#paradise-lost-the-text-adventure",
+    "title": "Projects",
+    "section": "1.7 Paradise Lost: The Text Adventure",
+    "text": "1.7 Paradise Lost: The Text Adventure\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: Gustave Doré - Satan Descends Upon Earth - Engraving 1866\n\n\n\n\n\nA text adventure of the Paradise Lost, focusing on the mentality and inevitability of Satan’s betrayal.\nParadise Lost is the 12-book epic poem composed in blank verse by John Milton in the mid-17th century. It greatly expands on the book of Genesis and focuses on Satan’s fall, his plans in Hell, and him eventually surveying the new Earth and the Eden where God’s newest creation now lives. He spies the two humans, Adam and Eve, and aims to corrupt them.\nHighly inspired by the text adventures featured in The Talos Principle and its sequel, The Talos Principle 2.\nDeveloped in Godot 4, which allowed simple development Additionally, Godot has visual editing, nodes for playing audio, and greater opportunity for artistic flair for less cost.\nView on GitHub \nPlay on Itch.io \n\n\n\n\n\n\n\n \n\n\nFigure 3: The main menu of Paradise Lost: The Text Adventure.\n\n\n\n\n\n\n\n\n\n\n \n\n\nFigure 4: An example of playing through the game.",
+    "crumbs": [
+      "Home",
+      "Projects"
+    ]
+  },
+  {
     "objectID": "projects.html#dogger",
     "href": "projects.html#dogger",
     "title": "Projects",
-    "section": "1.7 Dogger",
-    "text": "1.7 Dogger\n\nDogger is a version of Frogger where you play as a dog who must retrieve tennis balls your owner has thrown too far.",
+    "section": "1.8 Dogger",
+    "text": "1.8 Dogger\n\nDogger is a version of Frogger where you play as a dog who must retrieve tennis balls your owner has thrown too far.",
     "crumbs": [
       "Home",
       "Projects"
@@ -120,8 +131,8 @@
     "objectID": "projects.html#budgies-adventure-in-solitude-a-game",
     "href": "projects.html#budgies-adventure-in-solitude-a-game",
     "title": "Projects",
-    "section": "1.8 Budgie’s Adventure in Solitude (a game)",
-    "text": "1.8 Budgie’s Adventure in Solitude (a game)\n\nBudgie is a platformer game I made the junior year of my highschool in Unity as part of a video game development course. This was the first programming project I ever worked on. I additionally did all the art and animation.\n\n\n\n\n\n\n\nFigure 2: Screenshot of Budgie’s Adventure in Solitude\n\n\n\n\n\n\nAir jumps cost health and all diamonds must be collected before the player can exit via the door. Why are they called Budgie, Robert, and Michael? I don’t know.\nIt was super valuable to gain this experience programming at this age because my high school did not have any other programming courses",
+    "section": "1.9 Budgie’s Adventure in Solitude (a game)",
+    "text": "1.9 Budgie’s Adventure in Solitude (a game)\n\nBudgie is a platformer game I made the junior year of my highschool in Unity as part of a video game development course. This was the first programming project I ever worked on. I additionally did all the art and animation.\n\n\n\n\n\n\n\nFigure 5: Screenshot of Budgie’s Adventure in Solitude\n\n\n\n\n\n\nAir jumps cost health and all diamonds must be collected before the player can exit via the door. Why are they called Budgie, Robert, and Michael? I don’t know.\nIt was super valuable to gain this experience programming at this age because my high school did not have any other programming courses",
     "crumbs": [
       "Home",
       "Projects"
@@ -131,19 +142,19 @@
     "objectID": "projects.html#misc",
     "href": "projects.html#misc",
     "title": "Projects",
-    "section": "1.9 Misc",
-    "text": "1.9 Misc\nThis is for any smaller projects I’ve worked on that I’ll only shortly mention",
+    "section": "1.10 Misc",
+    "text": "1.10 Misc\nThis is for any smaller projects I’ve worked on that I’ll only shortly mention",
     "crumbs": [
       "Home",
       "Projects"
     ]
   },
   {
-    "objectID": "projects.html#topological-data-analysis",
-    "href": "projects.html#topological-data-analysis",
+    "objectID": "projects.html#metrics-in-topological-data-analysis",
+    "href": "projects.html#metrics-in-topological-data-analysis",
     "title": "Projects",
-    "section": "2.1 Topological Data Analysis",
-    "text": "2.1 Topological Data Analysis",
+    "section": "2.1 Metrics in Topological Data Analysis",
+    "text": "2.1 Metrics in Topological Data Analysis\n\n\n\nTopology is a field of mathematics concerned with the fundamental description of mathematic “objects”, quantifying and comparing their shape and relationship. More physically, topology is about the relationship of objects, such as the number of holes and contained voids, and how one can continuously deform object \\(A\\) to become object \\(B\\) without any cutting or gluing.\nThe most famous example of this problem is the torus (e.g. donut) and the coffee cup. Topologically, they are the same shape!",
     "crumbs": [
       "Home",
       "Projects"
@@ -165,7 +176,7 @@
     "href": "projects.html#writing",
     "title": "Projects",
     "section": "3.1 Writing",
-    "text": "3.1 Writing",
+    "text": "3.1 Writing\n\n\nI’ve done some of my own creative writing.\nI started writing poetry fall of my senior year of college during finals as an interesting way to procrastinate my Math and Computer Science finals and projects\n\n\nTattered Time, or That Starred Ensign\n\nTattered Time is my longest piece, six pages of two columns.\nIn terms of style, it is my own, but inspired in short line length by lyrics written by Anneke van Giersbergen\nAn additional inspiration was learning some amount of Welsh and its medieval literature. In form it is unlike their literature, yet echoes some themes such as prophecy of oppression.\n\n\n\n\n\n\n\n\nFigure 6: Tattered Time, or That Starred Ensign\n\n\n\n\n\nTime (a sestina)\n\nThis a sestina, a peculiar poetical form from Italy, where line-ending words are repeated and permuted under a certain pattern.\nThis was not easy to write, but it is interested and I’d be curious to have another try so many years after this was written.\nI wrote this particular one as part of a creative writing course.\n\n\n\n\n\n\n\n\nFigure 7: Time, a sestina\n\n\n\n\n\nCreation Myth\n\nThis poem was created under the idea of a being that is immortal (yet not invincible) living forever and seeing everything the universe can offer, yet still of fallible, human memory.\nI wrote this and rewrote it under revision as part of the same creative writing course.\n\n\n\n\n\n\n\n\nFigure 8: Creation Myth",
     "crumbs": [
       "Home",
       "Projects"
