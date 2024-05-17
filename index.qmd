@@ -1,21 +1,58 @@
 ---
-title: "etscheelk.github.io"
+title: ""
+grid: 
+  body-width: 900px
+about: 
+    id: intro-heading
+    template: trestles
+    image: res/gradme.jpg
+    image-width: 20em
+    image-alt: "Graduation photo of me, 2024-05-11. Cap and gown, in front of red tulips."
+    links: 
+      - icon: envelope
+        href: mailto:ethanScheelk@gmail.com
+      - icon: github
+        href: https://github.com/etscheelk
 ---
 
-This is a Quarto website.
+<!-- This is a Quarto website.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>. -->
 
-::: {.grid}
+:::{#intro-heading}
+## Ethan Scheelk
 
-::: {.g-col-4}
-This column takes 1/3 of the page
-:::
+I'm Ethan Scheelk and I'm a 2024 graduate with Computer Science and Mathematics majors from Macalester College in Saint Paul. Immediately after graduation I'll be doing eight weeks of Mathematics research with Macalester professor Lori Ziegelmeier. 
 
-::: {.g-col-8}
-This column takes 2/3 of the page. 
-
-Once upon a midnight dreary while I pondered weak and weary over a many quaint and curious volume of forgotten lore, suddenly I heard a tapping, as if someone rapping at my chamber door. 
-:::
+My career and programming interests lie in or around systems programming--specifically, programming with respect to the hardware it will be running on. 
 
 :::
+
+<!-- ::: {.grid} -->
+
+<!-- ::: {.g-col-4} -->
+<!-- This column takes 1/3 of the page -->
+
+<!-- ::: {#fig-gradme} 
+
+<embed src=res/gradme.jpg width=100%> </embed>
+
+2024-05-11
+
+::: -->
+
+
+
+<!-- ::: -->
+
+<!-- ::: {.g-col-6 .g-start-5} -->
+<!-- This column takes 2/3 of the page. 
+
+Once upon a midnight dreary while I pondered weak and weary over a many quaint and curious volume of forgotten lore, suddenly I heard a tapping, as if someone rapping at my chamber door.  -->
+<!-- I'm Ethan Scheelk and I'm a 2024 graduate with Computer Science and Mathematics majors from Macalester College in Saint Paul. Immediately after graduation I'll be doing eight weeks of Mathematics research with Macalester professor Lori Ziegelmeier. 
+
+My career and programming interests lie in or around systems programming--specifically, programming with respect to the hardware it will be running on.  -->
+
+<!-- ::: -->
+
+<!-- ::: -->

@@ -1,0 +1,17 @@
+<!-- ### Topology Research Assistant -->
+
+::::::{.grid}
+:::{.g-col-10 .g-start-2}
+
+I have the pleasure of being a post-bachelors research assistant as part of an 8-week research cohort with Professor Lori Ziegelmeier at Macalester College.
+As a cohort of four, we will contribute to Lori's Topological Data Analysis research.
+
+Our research for this summer is regarding the connection between keywords in scientific papers. 
+Topological data analysis can interpret the shape of data, so the aim of this project is to identify connections between research fields given their keywords and topics. 
+Additionally, this can be used to identify regions of research that have not otherwise received attention--What if there's some overlap of fields ripe for original research?
+
+This research program goes from 20 May to 12 July 2024. More details will follow. 
+
+:::
+
+::::::

@@ -1,18 +1,18 @@
 ---
 title: Projects
-date: 2024-04-15
+date: 2024-05-16
 description: Previous Work
 # title-block-banner: "blue"
 published-title: Last updated
 toc: true
-toc-location: left-body
+toc-location: left
 toc-title: "Contents"
 number-sections: true
 number-depth: 2
 toc-depth: 4
 engine: knitr
 grid: 
-    body-width: 1200px
+    body-width: 900px 
     sidebar-width: 15%
 abstract: "This is a list of projects and work that is important to me, but it does not define me entirely. You'll find programming projects like boids, a music game, a text adventure, and a Linux CLI; then you'll also find my other interests in Mathematics such as work I've done in Topological Data Analysis; further you'll find some miscellaneous work I'm proud of, such as my 6-page poem *Tattered Time*."
 abstract-title: "Description"
@@ -24,13 +24,13 @@ abstract-title: "Description"
 }
 ```
 
-Projects in bold labeled with 🚧 are still under construction. 
+Projects in bold labeled with 🚧 are still under construction or in-progress. 
 
 # ***Programming & Computer Science***
 
 ## Key Notes
 
-## **Parallel Boids**
+## **Parallel Boids** 
 
 {{< include projects/boids.qmd >}}
 
@@ -73,7 +73,9 @@ This is for any smaller projects I've worked on that I'll only shortly mention
 
 {{< include projects/metrics.qmd >}}  
 
-## Further
+## **Topology Research Assistant** 🚧 
+
+{{< include projects/topora.qmd >}}  
 
 # Miscellaneous 
 
@@ -82,4 +84,6 @@ This is for any smaller projects I've worked on that I'll only shortly mention
 {{< include projects/writing.qmd >}}
 
 ## Modding
+
+I've contributed mods to the Borderlands 2 modding community, see [BLCMods <i class="bi bi-github"></i>](https://github.com/BLCM/BLCMods). I am a repository manager and respond to some of the pull requests. 
 

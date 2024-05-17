@@ -5,6 +5,8 @@
 
 This is a project I undertook in COMP445 Parallel and Distributed Computer with Professor Libby Shoop. @fig-boids shows an example run of the final product, where 512 boids are being simulated on 4 threads, each boid colored with respect to thread. 
 
+[GitHub Repository <i class="bi bi-github"></i>](https://github.com/etscheelk/Boids-NVIDIA-ACC/tree/master)
+
 :::
 ::::::
 
@@ -19,16 +21,23 @@ Simulation of 512 boids on 4 threads. Each boid is colored with respect to the t
 
 ::::::{.grid}
 :::{.g-col-6}
+:::{#fig-cpu-boids}
 
 {{< video https://youtu.be/Xt0CV75LxJM >}}
 
+Boids running in CPU parallel.
+
+:::
 :::
 
 
 :::{.g-col-6}
-
+:::{#fig-gpu-boids}
 {{< video https://youtu.be/P5OwPPc-JX4 >}}
 
+Boids running in GPU parallel.
+
+:::
 :::
 ::::::
 
@@ -37,7 +46,9 @@ Simulation of 512 boids on 4 threads. Each boid is colored with respect to the t
 ::::::{.grid}
 :::{.g-col-8 .g-start-3}
 
-I enjoy parallel programming, yet it can be difficult to achieve the visual understanding and satisfaction of a given algorithm. Therefore, my aim was to implement [Boids](https://en.wikipedia.org/wiki/Boids) in parallel and visualize them. My greatest motivation was that I wished to visually observe the speedup of the simulation when rendering in parallel. 
+I enjoy parallel programming, yet it can be difficult to achieve the visual understanding and satisfaction of a given algorithm. 
+Therefore, my aim was to implement [Boids](https://en.wikipedia.org/wiki/Boids) in parallel and visualize them. 
+My greatest motivation was that I wished to visually observe the speedup of the simulation when rendering in parallel. 
 
 I used variety of parallelization paradigms and implemented the algorithm in C/C++. 
 
@@ -51,7 +62,12 @@ I used variety of parallelization paradigms and implemented the algorithm in C/C
 ::::::{.grid}
 :::{.g-col-8 .g-start-3}
 
-I use
+I used parallel `pragma` directives via OpenMP and OpenACC in order to distribute the calculations for boid updates. 
+OpenACC is available via NVIDIA's High Performance Computing (HPC) SDK, installed to Ubuntu in WSL2, displayed on an X Window. 
+
+The HPC SDK provides a new, powerful compiler `nvc`/`nvc++`, which is backwards compatible with OpenMP `pragma` directives, but also `pragma acc` and `pragma acc kernels` directives. This compiler also functions with `nvprof`, NVIDIA's profiler. Also provides a CUDA install. 
+
+The first edition of this boids simulation used pslot with an X window. Once it was shown it could be parallelized that way, I implemented it using a C++ library [TSGL](https://www.learnpdc.org/TSGLVisualizations/) ([GitHub  <i class="bi bi-github"></i>](https://github.com/Calvin-CS/TSGL)), the Thread-Safe Graphics Library, meant for parallel algorithm visualizations, made by an associate of Professor Libby. 
 
 :::
 ::::::
@@ -62,7 +78,14 @@ I use
 ::::::{.grid}
 :::{.g-col-8 .g-start-3}
 
-Professor Libby Shoop and I turned this project into a submission to EduPar2024 as a Peachy Parallel Assignment, intended to help educate future parallel programming students.
+Professor Libby (Elizabeth) Shoop (Macalester College) and I turned this project into a submission to EduPar2024 as a Peachy Parallel Assignment, intended to help educate future parallel programming students.
+
+This assignment will be presented May 27 in San Francisco by Professor Libby. [Program Schedule](https://tcpp.cs.gsu.edu/curriculum/?q=EduPar-24-technical-program).
+
+This involved cleaning up code, documenting it amply for both professors and students, and creating homework documents. 
+It features a few different assignments for various levels. A psplot edition using OpenMP, or GPU parallel with OpenACC. Then a higher level version in C++ implemented with TSGL, intended for a higher level undergraduate such as the course I took. 
+
+[Assignment GitHub <i class="bi bi-github"></i>](https://github.com/csinparallel/PDCAssignments).
 
 :::
 ::::::
