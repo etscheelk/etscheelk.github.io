@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-04-15">
+<meta name="dcterms.date" content="2024-05-22">
 <meta name="description" content="Previous Work">
 
 <title>etscheelk.github.io - Projects</title>
@@ -154,29 +154,19 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Home</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">etscheelk.github.io</span></a>
+ <span class="menu-text">Home</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About</span></a>
   </div>
 </li>
-      </ul>
-  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./projects.html" class="sidebar-item-text sidebar-link active">
@@ -198,7 +188,12 @@ window.Quarto = {
   <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools">Tools</a></li>
   <li><a href="#edupar2024-submission" id="toc-edupar2024-submission" class="nav-link" data-scroll-target="#edupar2024-submission">EduPar2024 Submission</a></li>
   </ul></li>
-  <li><a href="#dirview" id="toc-dirview" class="nav-link" data-scroll-target="#dirview"><span class="header-section-number">1.3</span> <strong>dirview</strong> 🚧</a></li>
+  <li><a href="#dirview" id="toc-dirview" class="nav-link" data-scroll-target="#dirview"><span class="header-section-number">1.3</span> <strong>dirview</strong> 🚧</a>
+  <ul class="collapse">
+  <li><a href="#current-status" id="toc-current-status" class="nav-link" data-scroll-target="#current-status">Current Status</a></li>
+  <li><a href="#roadblocks" id="toc-roadblocks" class="nav-link" data-scroll-target="#roadblocks">Roadblocks</a></li>
+  <li><a href="#lessons" id="toc-lessons" class="nav-link" data-scroll-target="#lessons">Lessons</a></li>
+  </ul></li>
   <li><a href="#cartoon-graphics-outline-shader" id="toc-cartoon-graphics-outline-shader" class="nav-link" data-scroll-target="#cartoon-graphics-outline-shader"><span class="header-section-number">1.4</span> <strong>Cartoon Graphics Outline Shader</strong></a></li>
   <li><a href="#retuna" id="toc-retuna" class="nav-link" data-scroll-target="#retuna"><span class="header-section-number">1.5</span> <strong>Retuna</strong></a></li>
   <li><a href="#chapel-study-and-writing" id="toc-chapel-study-and-writing" class="nav-link" data-scroll-target="#chapel-study-and-writing"><span class="header-section-number">1.6</span> <strong>Chapel study and writing</strong> 🚧</a></li>
@@ -210,7 +205,7 @@ window.Quarto = {
   <li><a href="#mathematics" id="toc-mathematics" class="nav-link" data-scroll-target="#mathematics"><span class="header-section-number">2</span> <strong><em>Mathematics</em></strong></a>
   <ul>
   <li><a href="#metrics-in-topological-data-analysis" id="toc-metrics-in-topological-data-analysis" class="nav-link" data-scroll-target="#metrics-in-topological-data-analysis"><span class="header-section-number">2.1</span> <strong>Metrics in Topological Data Analysis</strong></a></li>
-  <li><a href="#further" id="toc-further" class="nav-link" data-scroll-target="#further"><span class="header-section-number">2.2</span> Further</a></li>
+  <li><a href="#topology-research-assistant" id="toc-topology-research-assistant" class="nav-link" data-scroll-target="#topology-research-assistant"><span class="header-section-number">2.2</span> <strong>Topology Research Assistant</strong> 🚧</a></li>
   </ul></li>
   <li><a href="#miscellaneous" id="toc-miscellaneous" class="nav-link" data-scroll-target="#miscellaneous"><span class="header-section-number">3</span> Miscellaneous</a>
   <ul>
@@ -250,7 +245,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Last updated</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 15, 2024</p>
+      <p class="date">May 22, 2024</p>
     </div>
   </div>
   
@@ -267,45 +262,7 @@ window.Quarto = {
 
 </header>
 
-<nav id="TOC-body" role="doc-toc">
-    <h2 id="toc-title">Contents</h2>
-   
-  <ul>
-  <li><a href="#programming-computer-science" id="toc-programming-computer-science"><span class="header-section-number">1</span> <strong><em>Programming &amp; Computer Science</em></strong></a>
-  <ul>
-  <li><a href="#key-notes" id="toc-key-notes"><span class="header-section-number">1.1</span> Key Notes</a></li>
-  <li><a href="#parallel-boids" id="toc-parallel-boids"><span class="header-section-number">1.2</span> <strong>Parallel Boids</strong></a>
-  <ul>
-  <li><a href="#aims" id="toc-aims">Aims</a></li>
-  <li><a href="#tools" id="toc-tools">Tools</a></li>
-  <li><a href="#edupar2024-submission" id="toc-edupar2024-submission">EduPar2024 Submission</a></li>
-  </ul></li>
-  <li><a href="#dirview" id="toc-dirview"><span class="header-section-number">1.3</span> <strong>dirview</strong> 🚧</a></li>
-  <li><a href="#cartoon-graphics-outline-shader" id="toc-cartoon-graphics-outline-shader"><span class="header-section-number">1.4</span> <strong>Cartoon Graphics Outline Shader</strong></a></li>
-  <li><a href="#retuna" id="toc-retuna"><span class="header-section-number">1.5</span> <strong>Retuna</strong></a></li>
-  <li><a href="#chapel-study-and-writing" id="toc-chapel-study-and-writing"><span class="header-section-number">1.6</span> <strong>Chapel study and writing</strong> 🚧</a></li>
-  <li><a href="#paradise-lost-the-text-adventure" id="toc-paradise-lost-the-text-adventure"><span class="header-section-number">1.7</span> <strong>Paradise Lost: The Text Adventure</strong></a></li>
-  <li><a href="#dogger" id="toc-dogger"><span class="header-section-number">1.8</span> <strong>Dogger</strong></a></li>
-  <li><a href="#budgies-adventure-in-solitude-a-game" id="toc-budgies-adventure-in-solitude-a-game"><span class="header-section-number">1.9</span> <strong>Budgie’s Adventure in Solitude</strong> (a game)</a></li>
-  <li><a href="#misc" id="toc-misc"><span class="header-section-number">1.10</span> Misc</a></li>
-  </ul></li>
-  <li><a href="#mathematics" id="toc-mathematics"><span class="header-section-number">2</span> <strong><em>Mathematics</em></strong></a>
-  <ul>
-  <li><a href="#metrics-in-topological-data-analysis" id="toc-metrics-in-topological-data-analysis"><span class="header-section-number">2.1</span> <strong>Metrics in Topological Data Analysis</strong></a></li>
-  <li><a href="#further" id="toc-further"><span class="header-section-number">2.2</span> Further</a></li>
-  </ul></li>
-  <li><a href="#miscellaneous" id="toc-miscellaneous"><span class="header-section-number">3</span> Miscellaneous</a>
-  <ul>
-  <li><a href="#writing" id="toc-writing"><span class="header-section-number">3.1</span> Writing</a>
-  <ul>
-  <li><a href="#tattered-time-or-that-starred-ensign" id="toc-tattered-time-or-that-starred-ensign">Tattered Time, or That Starred Ensign</a></li>
-  <li><a href="#time-a-sestina" id="toc-time-a-sestina">Time (a sestina)</a></li>
-  <li><a href="#creation-myth" id="toc-creation-myth">Creation Myth</a></li>
-  </ul></li>
-  <li><a href="#modding" id="toc-modding"><span class="header-section-number">3.2</span> Modding</a></li>
-  </ul></li>
-  </ul>
-</nav>
+
 <div class="cell">
 <style type="text/css">
 #title-block-header .description {
@@ -313,7 +270,7 @@ window.Quarto = {
 }
 </style>
 </div>
-<p>Projects in bold labeled with 🚧 are still under construction.</p>
+<p>Projects in bold labeled with 🚧 are still under construction or in-progress.</p>
 <section id="programming-computer-science" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> <strong><em>Programming &amp; Computer Science</em></strong></h1>
 <section id="key-notes" class="level2" data-number="1.1">
@@ -325,6 +282,7 @@ window.Quarto = {
 <div class="grid">
 <div class="g-col-10 g-start-2">
 <p>This is a project I undertook in COMP445 Parallel and Distributed Computer with Professor Libby Shoop. <a href="#fig-boids" class="quarto-xref">Figure&nbsp;1</a> shows an example run of the final product, where 512 boids are being simulated on 4 threads, each boid colored with respect to thread.</p>
+<p><a href="https://github.com/etscheelk/Boids-NVIDIA-ACC/tree/master">GitHub Repository <i class="bi bi-github"></i></a></p>
 </div>
 </div>
 <div id="fig-boids" class="quarto-figure quarto-figure-center quarto-float anchored">
@@ -340,10 +298,28 @@ Figure&nbsp;1: Simulation of 512 boids on 4 threads. Each boid is colored with r
 </div>
 <div class="grid">
 <div class="g-col-6">
+<div id="fig-cpu-boids" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cpu-boids-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/Xt0CV75LxJM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cpu-boids-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Boids running in CPU parallel.
+</figcaption>
+</figure>
+</div>
+</div>
 <div class="g-col-6">
+<div id="fig-gpu-boids" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gpu-boids-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/P5OwPPc-JX4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gpu-boids-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Boids running in GPU parallel.
+</figcaption>
+</figure>
+</div>
 </div>
 </div>
 <section id="aims" class="level4">
@@ -359,7 +335,9 @@ Figure&nbsp;1: Simulation of 512 boids on 4 threads. Each boid is colored with r
 <h4 class="anchored" data-anchor-id="tools">Tools</h4>
 <div class="grid">
 <div class="g-col-8 g-start-3">
-<p>I use</p>
+<p>I used parallel <code>pragma</code> directives via OpenMP and OpenACC in order to distribute the calculations for boid updates. OpenACC is available via NVIDIA’s High Performance Computing (HPC) SDK, installed to Ubuntu in WSL2, displayed on an X Window.</p>
+<p>The HPC SDK provides a new, powerful compiler <code>nvc</code>/<code>nvc++</code>, which is backwards compatible with OpenMP <code>pragma</code> directives, but also <code>pragma acc</code> and <code>pragma acc kernels</code> directives. This compiler also functions with <code>nvprof</code>, NVIDIA’s profiler. Also provides a CUDA install.</p>
+<p>The first edition of this boids simulation used psplot with an X window. Once it was shown it could be parallelized that way, I implemented it using a C++ library <a href="https://www.learnpdc.org/TSGLVisualizations/">TSGL</a> (<a href="https://github.com/Calvin-CS/TSGL">GitHub <i class="bi bi-github"></i></a>), the Thread-Safe Graphics Library, meant for parallel algorithm visualizations, made by an associate of Professor Libby.</p>
 </div>
 </div>
 </section>
@@ -367,7 +345,10 @@ Figure&nbsp;1: Simulation of 512 boids on 4 threads. Each boid is colored with r
 <h4 class="anchored" data-anchor-id="edupar2024-submission">EduPar2024 Submission</h4>
 <div class="grid">
 <div class="g-col-8 g-start-3">
-<p>Professor Libby Shoop and I turned this project into a submission to EduPar2024 as a Peachy Parallel Assignment, intended to help educate future parallel programming students.</p>
+<p>Professor Libby (Elizabeth) Shoop (Macalester College) and I turned this project into a submission to EduPar2024 as a Peachy Parallel Assignment, intended to help educate future parallel programming students.</p>
+<p>This assignment will be presented May 27 in San Francisco by Professor Libby. <a href="https://tcpp.cs.gsu.edu/curriculum/?q=EduPar-24-technical-program">Program Schedule</a>.</p>
+<p>This involved cleaning up code, documenting it amply for both professors and students, and creating homework documents. It features a few different assignments for various levels. A psplot edition using OpenMP, or GPU parallel with OpenACC. Then a higher level version in C++ implemented with TSGL, intended for an upper level undergraduate course, such as the course I took.</p>
+<p><a href="https://github.com/csinparallel/PDCAssignments">Assignment GitHub <i class="bi bi-github"></i></a>.</p>
 </div>
 </div>
 </section>
@@ -377,10 +358,38 @@ Figure&nbsp;1: Simulation of 512 boids on 4 threads. Each boid is colored with r
 <div class="grid">
 <div class="g-col-10 g-start-2">
 <p>When trying to think of an excuse to work in C and the Linux environemnt, I came across the annoying quibble of how incessant it can be to navidate with <code>cd</code> and <code>ls</code> repeatedly when you don’t know where anything is.</p>
-<p>So I had the idea of a visual directory explorer where the user can explore</p>
-<p>Test</p>
+<p>So I had the idea of a visual directory explorer where the user can explore with arrows keys, enter or space, alongside a fuzzy-search (<code>fzf</code>) to filter items within the current directory.</p>
+<p>It’s not my intention to make the World’s Next Best Linux Directory Explorer, but just a little fun project I’d be happy to spend some time and learning on.</p>
+<p><a href="https://github.com/etscheelk/dirview">GitHub Repository <i class="bi bi-github"></i></a></p>
 </div>
 </div>
+<section id="current-status" class="level4">
+<h4 class="anchored" data-anchor-id="current-status">Current Status</h4>
+<div class="grid">
+<div class="g-col-8 g-start-3">
+<p>The typing bar is in workable state and that’s all that’s needed right now. Next up is to display items in the current directory. Will also figure out how to get <code>fzf</code> to show just the items in the current directory.</p>
+<p>My experience in Godot has provided some background experience in using event/signal-based programming.</p>
+</div>
+</div>
+</section>
+<section id="roadblocks" class="level4">
+<h4 class="anchored" data-anchor-id="roadblocks">Roadblocks</h4>
+<div class="grid">
+<div class="g-col-8 g-start-3">
+<p>Use of this TUI library has provided some challenges. Though a documentation page exists, it is insufficient for my tastes. It seems to provide brief comments helpful mostly to a person already familiar with the library. Example projects are the only way to begin to parse the unknown territory.</p>
+<p>Some other required documetation is also missing: It is left as a mystery as to which items are allocated on the heap. The “object” types this library provides largely have an <code>..._unref()</code> command, yet it requires trial and error to surmise this important memory status.</p>
+<p>I also believe the best documentation is code that documents itself.</p>
+</div>
+</div>
+</section>
+<section id="lessons" class="level4">
+<h4 class="anchored" data-anchor-id="lessons">Lessons</h4>
+<div class="grid">
+<div class="g-col-8 g-start-3">
+<p>Working with <code>tickit</code> has given me a lot of experience with working in unfamiliar territory. Additionally, I had not before used any libraries like this, providing primitive object and event behavior within C. Member functions are replicated with structs passed as pointers, side effects the goal with little safety save for the compiler type checker and runtime memory safety. Don’t worry C, you’re still cool. Makes me understand the significance of the choices made within the construction of object oriented programming languages, such as member functions providing API.</p>
+</div>
+</div>
+</section>
 </section>
 <section id="cartoon-graphics-outline-shader" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="cartoon-graphics-outline-shader"><span class="header-section-number">1.4</span> <strong>Cartoon Graphics Outline Shader</strong></h2>
@@ -411,16 +420,16 @@ Figure&nbsp;1: Simulation of 512 boids on 4 threads. Each boid is colored with r
 
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-satanfall-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Gustave Doré - <em>Satan Descends Upon Earth</em> - Engraving 1866
+Figure&nbsp;4: Gustave Doré - <em>Satan Descends Upon Earth</em> - Engraving 1866
 </figcaption>
 </figure>
 </div>
 </div>
-<div class="g-col-4">
+<div class="g-col-6">
 <p>A text adventure of the Paradise Lost, focusing on the mentality and inevitability of Satan’s betrayal.</p>
 <p><em>Paradise Lost</em> is the 12-book epic poem composed in blank verse by John Milton in the mid-17th century. It greatly expands on the book of Genesis and focuses on Satan’s fall, his plans in Hell, and him eventually surveying the new Earth and the Eden where God’s newest creation now lives. He spies the two humans, Adam and Eve, and aims to corrupt them.</p>
 <p>Highly inspired by the text adventures featured in <em>The Talos Principle</em> and its sequel, <em>The Talos Principle 2</em>.</p>
-<p>Developed in Godot 4, which allowed simple development Additionally, Godot has visual editing, nodes for playing audio, and greater opportunity for artistic flair for less cost.</p>
+<p>Developed in Godot 4, which allowed simple development. Additionally, Godot has visual editing, nodes for playing audio, and greater opportunity for artistic flair for less cost.</p>
 <p><a href="https://github.com/etscheelk/ParadiseLostTheAdventure">View on GitHub <i class="bi bi-github"></i></a></p>
 <p><a href="https://lalaith-meren.itch.io/paradise-lost-the-text-adventure">Play on Itch.io <i class="bi bi-keyboard"></i></a></p>
 </div>
@@ -433,7 +442,7 @@ Figure&nbsp;2: Gustave Doré - <em>Satan Descends Upon Earth</em> - Engraving 18
 <p><img src="res/paradisemenu.png" alt="The menu of Paradise Lost: The Text Adventure" width="95%" class="figure-img"> </p>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-paradiselostmenu-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: The main menu of <em>Paradise Lost: The Text Adventure</em>.
+Figure&nbsp;5: The main menu of <em>Paradise Lost: The Text Adventure</em>.
 </figcaption>
 </figure>
 </div>
@@ -447,7 +456,7 @@ Figure&nbsp;3: The main menu of <em>Paradise Lost: The Text Adventure</em>.
 <p><img src="res/paradisetext.png" alt="An example of playing through the game" width="95%" class="figure-img"> </p>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-paradiseexample-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: An example of playing through the game.
+Figure&nbsp;6: An example of playing through the game.
 </figcaption>
 </figure>
 </div>
@@ -472,7 +481,7 @@ Figure&nbsp;4: An example of playing through the game.
 
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-budgie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5: Screenshot of Budgie’s Adventure in Solitude
+Figure&nbsp;7: Screenshot of Budgie’s Adventure in Solitude
 </figcaption>
 </figure>
 </div>
@@ -506,8 +515,16 @@ test caption
 </div>
 </div>
 </section>
-<section id="further" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="further"><span class="header-section-number">2.2</span> Further</h2>
+<section id="topology-research-assistant" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="topology-research-assistant"><span class="header-section-number">2.2</span> <strong>Topology Research Assistant</strong> 🚧</h2>
+<!-- ### Topology Research Assistant -->
+<div class="grid">
+<div class="g-col-10 g-start-2">
+<p>I have the pleasure of being a post-bachelors research assistant as part of an 8-week research cohort with Professor Lori Ziegelmeier at Macalester College. As a cohort of four, we will contribute to Lori’s Topological Data Analysis research.</p>
+<p>Our research for this summer is regarding the connection between keywords in scientific papers. Topological data analysis can interpret the shape of data, so the aim of this project is to identify connections between research fields given their keywords and topics. Additionally, this can be used to identify regions of research that have not otherwise received attention–What if there’s some overlap of fields ripe for original research?</p>
+<p>This research program goes from 20 May to 12 July 2024. More details will follow.</p>
+</div>
+</div>
 </section>
 </section>
 <section id="miscellaneous" class="level1" data-number="3">
@@ -533,7 +550,7 @@ test caption
 
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tattered-time-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6: Tattered Time, or That Starred Ensign
+Figure&nbsp;8: Tattered Time, or That Starred Ensign
 </figcaption>
 </figure>
 </div>
@@ -552,7 +569,7 @@ Figure&nbsp;6: Tattered Time, or That Starred Ensign
 
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-time-sestina-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7: Time, a sestina
+Figure&nbsp;9: Time, a sestina
 </figcaption>
 </figure>
 </div>
@@ -570,7 +587,7 @@ Figure&nbsp;7: Time, a sestina
 
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-creation-myth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8: Creation Myth
+Figure&nbsp;10: Creation Myth
 </figcaption>
 </figure>
 </div>
@@ -578,6 +595,7 @@ Figure&nbsp;8: Creation Myth
 </section>
 <section id="modding" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="modding"><span class="header-section-number">3.2</span> Modding</h2>
+<p>I’ve contributed mods to the Borderlands 2 modding community, see <a href="https://github.com/BLCM/BLCMods">BLCMods <i class="bi bi-github"></i></a>. I am a repository manager and respond to some of the pull requests.</p>
 
 
 </section>
