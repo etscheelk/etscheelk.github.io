@@ -24,7 +24,7 @@ To learn more about Quarto websites visit <https://quarto.org/docs/websites>. --
 
 I'm Ethan Scheelk and I'm a 2024 graduate with Computer Science and Mathematics majors from Macalester College in Saint Paul. Immediately after graduation I'll be doing eight weeks of Mathematics research with Macalester professor Lori Ziegelmeier. 
 
-My career and programming interests lie in or around systems programming--specifically, programming with respect to the hardware it will be running on. 
+My career and programming interests lie in or around systems programming---to be specific, programming with respect to the hardware it will be running on. So, I love using lower level languages like C and interacting with Linux. 
 
 :::
 

@@ -67,7 +67,7 @@ OpenACC is available via NVIDIA's High Performance Computing (HPC) SDK, installe
 
 The HPC SDK provides a new, powerful compiler `nvc`/`nvc++`, which is backwards compatible with OpenMP `pragma` directives, but also `pragma acc` and `pragma acc kernels` directives. This compiler also functions with `nvprof`, NVIDIA's profiler. Also provides a CUDA install. 
 
-The first edition of this boids simulation used pslot with an X window. Once it was shown it could be parallelized that way, I implemented it using a C++ library [TSGL](https://www.learnpdc.org/TSGLVisualizations/) ([GitHub  <i class="bi bi-github"></i>](https://github.com/Calvin-CS/TSGL)), the Thread-Safe Graphics Library, meant for parallel algorithm visualizations, made by an associate of Professor Libby. 
+The first edition of this boids simulation used psplot with an X window. Once it was shown it could be parallelized that way, I implemented it using a C++ library [TSGL](https://www.learnpdc.org/TSGLVisualizations/) ([GitHub  <i class="bi bi-github"></i>](https://github.com/Calvin-CS/TSGL)), the Thread-Safe Graphics Library, meant for parallel algorithm visualizations, made by an associate of Professor Libby. 
 
 :::
 ::::::
@@ -83,7 +83,7 @@ Professor Libby (Elizabeth) Shoop (Macalester College) and I turned this project
 This assignment will be presented May 27 in San Francisco by Professor Libby. [Program Schedule](https://tcpp.cs.gsu.edu/curriculum/?q=EduPar-24-technical-program).
 
 This involved cleaning up code, documenting it amply for both professors and students, and creating homework documents. 
-It features a few different assignments for various levels. A psplot edition using OpenMP, or GPU parallel with OpenACC. Then a higher level version in C++ implemented with TSGL, intended for a higher level undergraduate such as the course I took. 
+It features a few different assignments for various levels. A psplot edition using OpenMP, or GPU parallel with OpenACC. Then a higher level version in C++ implemented with TSGL, intended for an upper level undergraduate course, such as the course I took. 
 
 [Assignment GitHub <i class="bi bi-github"></i>](https://github.com/csinparallel/PDCAssignments).
 

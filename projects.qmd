@@ -85,5 +85,5 @@ This is for any smaller projects I've worked on that I'll only shortly mention
 
 ## Modding
 
-I've contributed mods to the Borderlands 2 modding community, see [BLCMods <i class="bi bi-github"></i>](https://github.com/BLCM/BLCMods). I am a repository manager and respond to some of the pull requests. 
+I've contributed mods to the Borderlands 2 modding community, see [BLCMods <i class="bi bi-github"></i>](https://github.com/BLCM/BLCMods). I am a repository manager and respond to some of the pull requests.    
 

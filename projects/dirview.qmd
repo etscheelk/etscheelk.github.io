@@ -1,4 +1,5 @@
 
+
 ::::::{.grid}
 :::{.g-col-10 .g-start-2}
 
@@ -6,9 +7,28 @@ When trying to think of an excuse to work in C and the Linux environemnt, I came
 annoying quibble of how incessant it can be to navidate with `cd` and `ls` repeatedly when you 
 don't know where anything is. 
 
-So I had the idea of a visual directory explorer where the user can explore
-
-Test
+So I had the idea of a visual directory explorer where the user can explore with arrows keys, enter or space, alongside a fuzzy-search (`fzf`) to filter items within the current directory. 
 
 :::
 ::::::
+
+#### Roadblocks
+
+::::::{.grid}
+:::{.g-col-8 .g-start-3}
+
+Use of this TUI library has provides some challenges. 
+Though a documentation page exists, it is insufficient for my tastes. 
+It seems to provide brief comments helpful mostly to a person already familiar with the library.
+Example projects are the only way to begin to parse the unknown territory. 
+
+Some other required documetation is also missing: It is left as a mystery as to which items are allocated on the heap. The "object" types this library provides largely have an `..._unref()` command, yet it requires trial and error to discern at all if they must be deallocated or not in various situations. 
+
+I also believe the best documentation is code that documents itself.
+
+:::
+::::::
+
+#### Lessons
+
+Working with `tickit`
