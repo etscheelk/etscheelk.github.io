@@ -9,20 +9,39 @@ don't know where anything is.
 
 So I had the idea of a visual directory explorer where the user can explore with arrows keys, enter or space, alongside a fuzzy-search (`fzf`) to filter items within the current directory. 
 
+It's not my intention to make the World's Next Best Linux Directory Explorer, but just a little fun project
+I'd be happy to spend some time and learning on.
+
+[GitHub  Repository <i class="bi bi-github"></i>](https://github.com/etscheelk/dirview)
+
 :::
 ::::::
+
+#### Current Status
+
+::::::{.grid}
+:::{.g-col-8 .g-start-3}
+
+The typing bar is in workable state and that's all that's needed right now. Next up is to display items
+in the current directory. Will also figure out how to get `fzf` to show just the items in the current directory.
+
+My experience in Godot has provided some background experience in using event/signal-based programming. 
+
+:::
+::::::
+
 
 #### Roadblocks
 
 ::::::{.grid}
 :::{.g-col-8 .g-start-3}
 
-Use of this TUI library has provides some challenges. 
+Use of this TUI library has provided some challenges. 
 Though a documentation page exists, it is insufficient for my tastes. 
 It seems to provide brief comments helpful mostly to a person already familiar with the library.
 Example projects are the only way to begin to parse the unknown territory. 
 
-Some other required documetation is also missing: It is left as a mystery as to which items are allocated on the heap. The "object" types this library provides largely have an `..._unref()` command, yet it requires trial and error to discern at all if they must be deallocated or not in various situations. 
+Some other required documetation is also missing: It is left as a mystery as to which items are allocated on the heap. The "object" types this library provides largely have an `..._unref()` command, yet it requires trial and error to surmise this important memory status.
 
 I also believe the best documentation is code that documents itself.
 
@@ -31,4 +50,17 @@ I also believe the best documentation is code that documents itself.
 
 #### Lessons
 
-Working with `tickit`
+::::::{.grid}
+:::{.g-col-8 .g-start-3}
+
+Working with `tickit` has given me a lot of experience with working 
+in unfamiliar territory. Additionally, I had not before used any libraries like this,
+providing primitive object and event behavior within C. 
+Member functions are replicated with structs passed as pointers, side effects the goal with 
+little safety save for the compiler type checker and runtime memory safety. Don't worry C, 
+you're still cool.
+Makes me understand the significance of the choices made within the construction of
+object oriented programming languages, such as member functions providing API. 
+
+:::
+::::::
