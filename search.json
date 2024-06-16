@@ -31,11 +31,18 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n\n\n Back to top",
+    "text": "This site was produced using Quarto so I had to learn only minimal HTML and CSS. It is hosted on my personal github page.\n\n\n\n Back to top",
     "crumbs": [
       "Home",
       "About"
     ]
+  },
+  {
+    "objectID": "fractal-art.html",
+    "href": "fractal-art.html",
+    "title": "Fractal Art",
+    "section": "",
+    "text": "Figure 1: Evergreen\n\n\n\n\n\n\n\n\n\n\nFigure 2: Fusion\n\n\n\n\n\n\n\n\n\n\nFigure 3: Cataclysm\n\n\n\n\n\n\n\n\n\n\nFigure 4: Chalk Art\n\n\n\n\n\n\n\n\n\n\nFigure 5: Eye of the Benevolent Universe\n\n\n\n\n\n\n\n\n\n\nFigure 6: Memories of Seahorse\n\n\n\n\n\n\n\n\n\n\nFigure 7: Ghost in the Lens\n\n\n\n\n\n\n\n\n\n\nFigure 8: Horizon\n\n\n\n\n\n\n\n\n\n\nFigure 9: Malice\n\n\n\n\n\n\n\n\n\n\nFigure 10: Mana\n\n\n\n\n\n\n\n\n\n\nFigure 11: Starbursts\n\n\n\n\n\n\n\n\n\n\nFigure 12: Soap Film\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "projects.html",
@@ -53,7 +60,7 @@
     "href": "projects.html#key-notes",
     "title": "Projects",
     "section": "1.1 Key Notes",
-    "text": "1.1 Key Notes",
+    "text": "1.1 Key Notes\n\n\nI do almost all of my programming on Linux. It’s just easier there. I use Windows Subsystem for Linux (WSL2) in order to have both Windows and Ubuntu (jammy), still using VSCode. So I only get a terminal for Linux but I’ve really enjoyed it and it has really improved both my typing speed and my ability to use the terminal, which I typically prefer to use.\nIt’s actually kind of crazy, I am also able to access all my Windows files with my bash shell. Therefore, when I want to do some things that are just easier in the terminal, I just keep using bash but on my Windows files.\nOne of my favorite CLIs is fzf, a fuzzy search on directories.",
     "crumbs": [
       "Home",
       "Projects"
@@ -75,7 +82,18 @@
     "href": "projects.html#dirview",
     "title": "Projects",
     "section": "1.3 dirview 🚧",
-    "text": "1.3 dirview 🚧\n\n\nWhen trying to think of an excuse to work in C and the Linux environemnt, I came across the annoying quibble of how incessant it can be to navidate with cd and ls repeatedly when you don’t know where anything is.\nSo I had the idea of a visual directory explorer where the user can explore with arrows keys, enter or space, alongside a fuzzy-search (fzf) to filter items within the current directory.\nIt’s not my intention to make the World’s Next Best Linux Directory Explorer, but just a little fun project I’d be happy to spend some time and learning on.\nGitHub Repository \n\n\n\nCurrent Status\n\n\nThe typing bar is in workable state and that’s all that’s needed right now. Next up is to display items in the current directory. Will also figure out how to get fzf to show just the items in the current directory.\nMy experience in Godot has provided some background experience in using event/signal-based programming.\n\n\n\n\nRoadblocks\n\n\nUse of this TUI library has provided some challenges. Though a documentation page exists, it is insufficient for my tastes. It seems to provide brief comments helpful mostly to a person already familiar with the library. Example projects are the only way to begin to parse the unknown territory.\nSome other required documetation is also missing: It is left as a mystery as to which items are allocated on the heap. The “object” types this library provides largely have an ..._unref() command, yet it requires trial and error to surmise this important memory status.\nI also believe the best documentation is code that documents itself.\n\n\n\n\nLessons\n\n\nWorking with tickit has given me a lot of experience with working in unfamiliar territory. Additionally, I had not before used any libraries like this, providing primitive object and event behavior within C. Member functions are replicated with structs passed as pointers, side effects the goal with little safety save for the compiler type checker and runtime memory safety. Don’t worry C, you’re still cool. Makes me understand the significance of the choices made within the construction of object oriented programming languages, such as member functions providing API.",
+    "text": "1.3 dirview 🚧\n\n\nWhen trying to think of an excuse to work in C and the Linux environemnt, I came across the annoying quibble of how incessant it can be to navidate with cd and ls repeatedly when you don’t know where anything is.\nSo I had the idea of a visual directory explorer where the user can explore with arrows keys, enter or space, alongside a fuzzy-search (fzf) to filter items within the current directory.\nIt’s not my intention to make the World’s Next Best Linux Directory Explorer, but just a little fun project I’d be happy to spend some time and learning on.\nGitHub Repository \n\n\n\nCurrent Status\n\n\n\nThe typing bar is in workable state and that’s all that’s needed right now. Next up is to display items in the current directory. Will also figure out how to get fzf to show just the items in the current directory.\nMy experience in Godot has provided some background experience in using event/signal-based programming.\nUsed fork exec pattern, piping, dirent, and fzf to\n\nread current directory contents and write to file\nread said file and send to fzf to be fuzzy filtered\noutput filtered contents to new file\n\nIt works!…. when standalone.\nWhen implemented in main file, it breaks the window. Since fork replicates the memory space, I now have two tickit terminals running.\nChecked out vfork and clone?\nNext idea is to fork a thread at the start of main to run as a companion. Could also create a pipe or two for communication between them.\n\n\n\n\n\nRoadblocks\n\n\nUse of this TUI library has provided some challenges. Though a documentation page exists, it is insufficient for my tastes. It seems to provide brief comments helpful mostly to a person already familiar with the library. Example projects are the only way to begin to parse the unknown territory.\nSome other required documetation is also missing: It is left as a mystery as to which items are allocated on the heap. The “object” types this library provides largely have an ..._unref() command, yet it requires trial and error to surmise this important memory status.\nI also believe the best documentation is code that documents itself.\n\n\n\n\nLessons\n\n\nWorking with tickit has given me a lot of experience with working in unfamiliar territory. Additionally, I had not before used any libraries like this, providing primitive object and event behavior within C. Member functions are replicated with structs passed as pointers, side effects the goal with little safety save for the compiler type checker and runtime memory safety. Don’t worry C, you’re still cool. Makes me understand the significance of the choices made within the construction of object oriented programming languages, such as member functions providing API.",
+    "crumbs": [
+      "Home",
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "projects.html#rust-work",
+    "href": "projects.html#rust-work",
+    "title": "Projects",
+    "section": "1.4 Rust Work",
+    "text": "1.4 Rust Work\nSee Section 2.2. I’ve been learning and using Rust to contribute to a Topological Data Analysis Crate called OAT (Open Applied Topology).\nNow, the lead dev of this library had said before Rust was an easy language to learn, and I disagreed. Me disagreeing doesn’t mean I didn’t like the language–in fact I’ve come to really like it. I really like its trait system, for one. Anyway, I won’t linger too long on the specifics.\nIt’s really satisfying implementing generic data structures! (who knew). Instead of doing a HashMap default-get with .entry().and_modify(...).or_insert(...), why don’t I write a new trait for HashMap to offer the same implementation? I know that’s nothing crazy, but still. The OAT library I’ve been working on is entirely written in generics in order to offer modularity and flexibility for operations on different objects. For example, an entry of a matrix will be required to have an algebraic ring defining the operations on said objects. And so on, through a maze of dependent objects.\nThe Rust analyzer is an amazing tool.\nThe lead dev Greg and I spent three hours over zoom tracing a bug that led to occasional crashes within the compiled Python library. It turned out to be some confusion about some custom-defined order operators, a minor or major view ascending on a matrix, some reverse iterators, and another iterator which required a strict ascent on its data. The solution? Comment out the lines that reversed those iterators.",
     "crumbs": [
       "Home",
       "Projects"
@@ -85,8 +103,8 @@
     "objectID": "projects.html#cartoon-graphics-outline-shader",
     "href": "projects.html#cartoon-graphics-outline-shader",
     "title": "Projects",
-    "section": "1.4 Cartoon Graphics Outline Shader",
-    "text": "1.4 Cartoon Graphics Outline Shader\nsomething",
+    "section": "1.5 Cartoon Graphics Outline Shader",
+    "text": "1.5 Cartoon Graphics Outline Shader",
     "crumbs": [
       "Home",
       "Projects"
@@ -96,19 +114,30 @@
     "objectID": "projects.html#retuna",
     "href": "projects.html#retuna",
     "title": "Projects",
-    "section": "1.5 Retuna",
-    "text": "1.5 Retuna\nSomething\nmore more more!",
+    "section": "1.6 Retuna 🐟",
+    "text": "1.6 Retuna 🐟\n\n\n\nRetuna is an eartraining app which fills the gaps left by other eartraining apps. As part of a semester-long development cycle, we collaborated as a team to develop a game in Godot. We planned a project timeline and identified a minimum viable product. In the end, we published game on itch.io and ensured compatibility with alternative input methods. As a group of three, we had to manage the division of labor, handle communication between teammates, and, of course, solve merge conflicts.\nGitHub Repository \nPlay on Itch.io \n\nDescription\nAs a game, the game play window will have a set of notes in a melody, and some number of them are detuned by some amount. The measure of “detune” is in cents, and 50 cents out of tune is the most you can be before you’re just approaching another note. Therefore, we have fine-grained control over the detune of the notes, which can provide extra difficulty. More notes can also provide difficulty.\nThe player can listen to the melody as many times as they want and may individually select notes to replay them. Once the player makes their decision, they may check their solution. They may attempt as many times as they wish.\n\n\n\n\n\n\n\nFigure 4: Retuna main game window\n\n\n\n\n\n\n\n\n\n\nFigure 5: Retuna freeplay settings window\n\n\n\n\n\nWork\nI had some minimal previous experience with Godot, but we picked it as our platform for several reasons. Godot already had pre-made nodes which handled audio, so we were readily able to play the notes we needed, rather than having to install strange, underdocumented libraries. We also wished to avoid Javascript for similar reasons–anyway, Godot was already incredibly portable to almost every platform. Therefore, gladly, we were able to publish our polished game on itch.io.\nAs a success story, I’m not a musician and I greatly improved at telling when notes were out of tune\n\n\nChallenges\nOne of the biggest challenges of programming in Godot was figuring out the proper programmatic structure. What has what as a child and how do we send information between them? Godot has a very tree-centric structure, so it was difficult to disambiguate all the different nodes.\n\n\nMy work\nThe freeplay setting select menu is entirely my own effort. I created the custom sliders, and I’m really proud of how one slider will impact a different slider. Additionally, since the entire game had to be navigable with keyboard or controller, so did the freeplay settings. We had to make some compromises due to the limitation that a horizontal slider, when selected, is adjusted with left and right.\nOh yeah, and to color the text differently based on the slider bar’s position, I had to write a shader, haha.\nWithin the main game window, I implemented the functionality for placing notes, the play bar, and the playbar playing the notes. All the freeplay settings had to be set every time the main game window was loaded. Additionally, I made it so freeplay settings kept their values when going back to the options. That was actually kind of a pain.\n\n\n\n\n\n\n\nFigure 6: Yes the name is a pun and it’s an amazing one.",
     "crumbs": [
       "Home",
       "Projects"
     ]
   },
   {
-    "objectID": "projects.html#chapel-study-and-writing",
-    "href": "projects.html#chapel-study-and-writing",
+    "objectID": "projects.html#chapel-programming-languages-study",
+    "href": "projects.html#chapel-programming-languages-study",
     "title": "Projects",
-    "section": "1.6 Chapel study and writing 🚧",
-    "text": "1.6 Chapel study and writing 🚧\n\nDue to my interest in further education in parallel programming",
+    "section": "1.7 Chapel Programming Languages Study",
+    "text": "1.7 Chapel Programming Languages Study\nDue to my interest in continuing my learning in parallel programming, I got involved in an independent study for the duration of my final semester at Macalester. In this time I studied and learned the Chapel programming language and wrote an introductory chapter on the language which will be included within the intermediate or advanced PDC textbooks on learnpdc.org.\nChapel is a programming language built to provide accessible parallel programming. What required compiler directives, other libraries, and intensive thought in C or C++ is now accessible through simple language keywords and helpful abstractions. Chapel is also intended to be easy to pick up and to be familiar to Python programmers, while still being a fast, scalable, statically typed language. Go to the Chapel home page for more information.\nInstallation for me required building from source.\nThe best thing I did with Chapel was create fractal images, see below Section 1.8 for more info.\nOne of my favorite features in Chapel (besides the obvious) is the implementation of config variables. Write config var N: uint(32) = 100; and now you have a runtime commandline option accessed with --N=....",
+    "crumbs": [
+      "Home",
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "projects.html#sec-fractals",
+    "href": "projects.html#sec-fractals",
+    "title": "Projects",
+    "section": "1.8 Fractals in Chapel",
+    "text": "1.8 Fractals in Chapel\nInspired by a talk Professor Paul Cantrell gave titled “Animating Fractals for Fun and No Profit”.\nThis method involves the effects of a polar to rectangular coordinates transform, or vice-versa. Given a random starting position, transform it randomly polar-&gt;rectangular or rectangular-&gt;polar somewhere in the range of one to ten billion times, saving it to a pixel for each position.\nThe preliminary method to speed this up, same as in Paul’s journey, is to speed up the random number generation. Since there are only two possible paths, you can utilize the bits of a random 64-bit integer. Next step was to pregenerate the random numbers. Because this program was written in Chapel, parallelizing it was as simple as writing forall in place of a for in the correct spot.\nThrough some happy mistakes, I managed to create some alternative results of the fractals. The image is an array of atomic integers essentially functioning as a CCD camera sent to an exterior function (now in Chapel source) to save the array to a .bmp. Since it is like a CCD, the image is greyscale. Color is introduced by myself in art programs.\n\n\n\n\n\n\n\nFigure 7: Evergreen\n\n\n\nSee more in the dedicated page for art.",
     "crumbs": [
       "Home",
       "Projects"
@@ -118,8 +147,8 @@
     "objectID": "projects.html#paradise-lost-the-text-adventure",
     "href": "projects.html#paradise-lost-the-text-adventure",
     "title": "Projects",
-    "section": "1.7 Paradise Lost: The Text Adventure",
-    "text": "1.7 Paradise Lost: The Text Adventure\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 4: Gustave Doré - Satan Descends Upon Earth - Engraving 1866\n\n\n\n\n\nA text adventure of the Paradise Lost, focusing on the mentality and inevitability of Satan’s betrayal.\nParadise Lost is the 12-book epic poem composed in blank verse by John Milton in the mid-17th century. It greatly expands on the book of Genesis and focuses on Satan’s fall, his plans in Hell, and him eventually surveying the new Earth and the Eden where God’s newest creation now lives. He spies the two humans, Adam and Eve, and aims to corrupt them.\nHighly inspired by the text adventures featured in The Talos Principle and its sequel, The Talos Principle 2.\nDeveloped in Godot 4, which allowed simple development. Additionally, Godot has visual editing, nodes for playing audio, and greater opportunity for artistic flair for less cost.\nView on GitHub \nPlay on Itch.io \n\n\n\n\n\n\n\n \n\n\nFigure 5: The main menu of Paradise Lost: The Text Adventure.\n\n\n\n\n\n\n\n\n\n\n \n\n\nFigure 6: An example of playing through the game.",
+    "section": "1.9 Paradise Lost: The Text Adventure",
+    "text": "1.9 Paradise Lost: The Text Adventure\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 8: Gustave Doré - Satan Descends Upon Earth - Engraving 1866\n\n\n\n\n\nA text adventure of the Paradise Lost, focusing on the mentality and inevitability of Satan’s betrayal.\nParadise Lost is the 12-book epic poem composed in blank verse by John Milton in the mid-17th century. It greatly expands on the book of Genesis and focuses on Satan’s fall, his plans in Hell, and him eventually surveying the new Earth and the Eden where God’s newest creation now lives. He spies the two humans, Adam and Eve, and aims to corrupt them.\nHighly inspired by the text adventures featured in The Talos Principle and its sequel, The Talos Principle 2.\nDeveloped in Godot 4, which allowed simple development. Additionally, Godot has visual editing, nodes for playing audio, and greater opportunity for artistic flair for less cost.\nView on GitHub \nPlay on Itch.io \n\n\n\n\n\n\n\n \n\n\nFigure 9: The main menu of Paradise Lost: The Text Adventure.\n\n\n\n\n\n\n\n\n\n\n \n\n\nFigure 10: An example of playing through the game.",
     "crumbs": [
       "Home",
       "Projects"
@@ -129,8 +158,8 @@
     "objectID": "projects.html#dogger",
     "href": "projects.html#dogger",
     "title": "Projects",
-    "section": "1.8 Dogger",
-    "text": "1.8 Dogger\n\nDogger is a version of Frogger where you play as a dog who must retrieve tennis balls your owner has thrown too far.",
+    "section": "1.10 Dogger",
+    "text": "1.10 Dogger\n\nDogger is a version of Frogger where you play as a dog who must retrieve tennis balls your owner has thrown too far. I made this as part of a group in a Java class sophomore year of college.\n\n\n\n\n\n\n\n\n\nFigure 11: Main menu of Dogger\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 12: Play window of Dogger\n\n\n\n\n\nThe dog’s name is Chaucer Bandogrick III. He doesn’t die, he just gets hurt.\nI created the animations for the dog, alongside the tileset. My groupmate Dan made the vehicles and he did a fantastic job.\n\n\n\n\n\n\n\n\n\nFigure 13: The win-screen of Dogger.\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 14: The lose-screen of Dogger.\n\n\n\n\n\nThis one was just a lot of fun to make. And it’s another game with a name pun.",
     "crumbs": [
       "Home",
       "Projects"
@@ -140,8 +169,8 @@
     "objectID": "projects.html#budgies-adventure-in-solitude-a-game",
     "href": "projects.html#budgies-adventure-in-solitude-a-game",
     "title": "Projects",
-    "section": "1.9 Budgie’s Adventure in Solitude (a game)",
-    "text": "1.9 Budgie’s Adventure in Solitude (a game)\n\nBudgie is a platformer game I made the junior year of my highschool in Unity as part of a video game development course. This was the first programming project I ever worked on. I additionally did all the art and animation.\n\n\n\n\n\n\n\nFigure 7: Screenshot of Budgie’s Adventure in Solitude\n\n\n\n\n\n\nAir jumps cost health and all diamonds must be collected before the player can exit via the door. Why are they called Budgie, Robert, and Michael? I don’t know.\nIt was super valuable to gain this experience programming at this age because my high school did not have any other programming courses",
+    "section": "1.11 Budgie’s Adventure in Solitude (a game)",
+    "text": "1.11 Budgie’s Adventure in Solitude (a game)\n\nBudgie is a platformer game I made the junior year of my highschool in Unity as part of a video game development course. This was the first programming project I ever worked on. I additionally did all the art and animation.\n\n\n\n\n\n\n\nFigure 15: Screenshot of Budgie’s Adventure in Solitude\n\n\n\n\n\n\nAir jumps cost health and all diamonds must be collected before the player can exit via the door. Why are they called Budgie, Robert, and Michael? I don’t know.\nIt was super valuable to gain this experience programming at this age because my high school did not have any other programming courses",
     "crumbs": [
       "Home",
       "Projects"
@@ -151,8 +180,8 @@
     "objectID": "projects.html#misc",
     "href": "projects.html#misc",
     "title": "Projects",
-    "section": "1.10 Misc",
-    "text": "1.10 Misc\nThis is for any smaller projects I’ve worked on that I’ll only shortly mention",
+    "section": "1.12 Misc",
+    "text": "1.12 Misc\nThis is for any smaller projects I’ve worked on that I’ll only shortly mention",
     "crumbs": [
       "Home",
       "Projects"
@@ -170,11 +199,11 @@
     ]
   },
   {
-    "objectID": "projects.html#topology-research-assistant",
-    "href": "projects.html#topology-research-assistant",
+    "objectID": "projects.html#sec-topo-research",
+    "href": "projects.html#sec-topo-research",
     "title": "Projects",
     "section": "2.2 Topology Research Assistant 🚧",
-    "text": "2.2 Topology Research Assistant 🚧\n\n\n\nI have the pleasure of being a post-bachelors research assistant as part of an 8-week research cohort with Professor Lori Ziegelmeier at Macalester College. As a cohort of four, we will contribute to Lori’s Topological Data Analysis research.\nOur research for this summer is regarding the connection between keywords in scientific papers. Topological data analysis can interpret the shape of data, so the aim of this project is to identify connections between research fields given their keywords and topics. Additionally, this can be used to identify regions of research that have not otherwise received attention–What if there’s some overlap of fields ripe for original research?\nThis research program goes from 20 May to 12 July 2024. More details will follow.",
+    "text": "2.2 Topology Research Assistant 🚧\n\n\n\nI have the pleasure of being a post-bachelors research assistant as part of an 8-week research cohort with Professor Lori Ziegelmeier at Macalester College. As a cohort of four, we will contribute to Lori’s Topological Data Analysis research.\nOur research for this summer is regarding the connection between keywords in scientific papers. Topological data analysis can interpret the shape of data, so the aim of this project is to identify connections between research fields given their keywords and topics. Additionally, this can be used to identify regions of research that have not otherwise received attention–What if there’s some overlap of fields ripe for original research?\nThis research program goes from 20 May to 12 July 2024. More details will follow.\nThe following details:\nI am working on the Rust crate OAT (open applied topology) with the lead developer Greg Henselman-Petrusek. This is a currently-proprietary library for performing Topological Data Analysis, meant to be a highly modular library with traits to define algebraic properties on any object. It has the capability to return cycle optimizations alongside with a great amount of informations about the simplices involved in that cycle.\nSome of the computational results of OAT take a long time to calculate, so my efforts to date have focused on finding ways to save these objects. Once compiled to a Python library, this one object, a FactoredBoundaryMatrixVr, cannot be saved using either pickle or dill or any other method.\nNext was to try within Rust, to use Serde to Serialize and Deserialize each object. Unfortunately, this requires essentially fully recursively defined serialization and deserialization on every object. It becomes a cat-and-mouse game of fixing errors, adding trait bounds, derives, and so on. Unfortunately, there are some things which cannot be serialized. Structs with references don’t work. Some struct wrapeprs, such as Flatten within Iterator, do not have a serialization. Even though Iterator does! Flatten&lt;Iterator&gt; is just an iterator!! Ugh.\nThe complicated data results are actually largely stored in the U-match decomposition (a matrix factorization), so my next effort will be to work on saving that data. It may involve some slight algorithmic changes.\nI actually really like Rust so far!!",
     "crumbs": [
       "Home",
       "Projects"
@@ -185,7 +214,7 @@
     "href": "projects.html#writing",
     "title": "Projects",
     "section": "3.1 Writing",
-    "text": "3.1 Writing\n\n\nI’ve done some of my own creative writing.\nI started writing poetry fall of my senior year of college during finals as an interesting way to procrastinate my Math and Computer Science finals and projects\n\n\nTattered Time, or That Starred Ensign\n\nTattered Time is my longest piece, six pages of two columns.\nIn terms of style, it is my own, but inspired in short line length by lyrics written by Anneke van Giersbergen\nAn additional inspiration was learning some amount of Welsh and its medieval literature. In form it is unlike their literature, yet echoes some themes such as prophecy of oppression.\n\n\n\n\n\n\n\n\nFigure 8: Tattered Time, or That Starred Ensign\n\n\n\n\n\nTime (a sestina)\n\nThis a sestina, a peculiar poetical form from Italy, where line-ending words are repeated and permuted under a certain pattern.\nThis was not easy to write, but it is interested and I’d be curious to have another try so many years after this was written.\nI wrote this particular one as part of a creative writing course.\n\n\n\n\n\n\n\n\nFigure 9: Time, a sestina\n\n\n\n\n\nCreation Myth\n\nThis poem was created under the idea of a being that is immortal (yet not invincible) living forever and seeing everything the universe can offer, yet still of fallible, human memory.\nI wrote this and rewrote it under revision as part of the same creative writing course.\n\n\n\n\n\n\n\n\nFigure 10: Creation Myth",
+    "text": "3.1 Writing\n\n\nI’ve done some of my own creative writing.\nI started writing poetry fall of my senior year of college during finals as an interesting way to procrastinate my Math and Computer Science finals and projects\nI really like it and I’ve continued to write\n\n\nTattered Time, or That Starred Ensign\n\nTattered Time is my longest piece, six pages of two columns.\nIn terms of style, it is my own, but inspired in short line length by lyrics written by Anneke van Giersbergen\nAn additional inspiration was learning some amount of Welsh and its medieval literature. In form it is unlike their literature, yet echoes some themes such as prophecy of oppression.\n\n\n\n\n\n\n\n\nFigure 16: Tattered Time, or That Starred Ensign\n\n\n\n\n\nTime (a sestina)\n\nThis a sestina, a peculiar poetical form from Italy, where line-ending words are repeated and permuted under a certain pattern.\nThis was not easy to write, but it is interested and I’d be curious to have another try so many years after this was written.\nI wrote this particular one as part of a creative writing course.\n\n\n\n\n\n\n\n\nFigure 17: Time, a sestina\n\n\n\n\n\nCreation Myth\n\nThis poem was created under the idea of a being that is immortal (yet not invincible) living forever and seeing everything the universe can offer, yet still of fallible, human memory.\nI wrote this and rewrote it under revision as part of the same creative writing course.\n\n\n\n\n\n\n\n\nFigure 18: Creation Myth",
     "crumbs": [
       "Home",
       "Projects"
@@ -196,7 +225,7 @@
     "href": "projects.html#modding",
     "title": "Projects",
     "section": "3.2 Modding",
-    "text": "3.2 Modding\nI’ve contributed mods to the Borderlands 2 modding community, see BLCMods . I am a repository manager and respond to some of the pull requests.",
+    "text": "3.2 Modding\nI’ve contributed mods to the Borderlands 2 modding community, see BLCMods . I am a repository manager and I occasionally respond to pull requests.",
     "crumbs": [
       "Home",
       "Projects"
