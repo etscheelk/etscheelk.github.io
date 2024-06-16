@@ -92,3 +92,19 @@ Malice
 Mana
 
 :::
+
+:::{#fig-fractals-starburst}
+
+<embed src=res/fractals/StarburstFireworks.png width=100%> </embed>
+
+Starbursts
+
+:::
+
+:::{#fig-fractals-soap}
+
+<embed src=res/fractals/SoapFilm.png width=100%> </embed>
+
+Soap Film
+
+:::

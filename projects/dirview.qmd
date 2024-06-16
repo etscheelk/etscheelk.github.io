@@ -22,10 +22,18 @@ I'd be happy to spend some time and learning on.
 ::::::{.grid}
 :::{.g-col-8 .g-start-3}
 
-The typing bar is in workable state and that's all that's needed right now. Next up is to display items
-in the current directory. Will also figure out how to get `fzf` to show just the items in the current directory.
+* The typing bar is in workable state and that's all that's needed right now. Next up is to display items in the current directory. Will also figure out how to get `fzf` to show just the items in the current directory.
 
-My experience in Godot has provided some background experience in using event/signal-based programming. 
+* My experience in Godot has provided some background experience in using event/signal-based programming. 
+
+* Used fork exec pattern, piping, dirent, and fzf to
+  * read current directory contents and write to file
+  * read said file and send to fzf to be fuzzy filtered
+  * output filtered contents to new file
+* It works!.... when standalone.
+* When implemented in main file, it breaks the window. Since fork replicates the memory space, I now have two tickit terminals running.
+* Checked out vfork and clone?
+* Next idea is to fork a thread at the start of main to run as a companion. Could also create a pipe or two for communication between them. 
 
 :::
 ::::::
