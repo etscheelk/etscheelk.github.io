@@ -13,6 +13,8 @@ about:
         href: mailto:ethanScheelk@gmail.com
       - icon: github
         href: https://github.com/etscheelk
+      - icon: linkedin
+        href: https://www.linkedin.com/in/ethan-scheelk-507717272/
 ---
 
 <!-- This is a Quarto website.

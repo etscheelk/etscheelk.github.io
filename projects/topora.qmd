@@ -12,6 +12,18 @@ Additionally, this can be used to identify regions of research that have not oth
 
 This research program goes from 20 May to 12 July 2024. More details will follow. 
 
+The following details:
+
+I am working on the Rust crate OAT (open applied topology) with the lead developer Greg Henselman-Petrusek. This is a currently-proprietary library for performing Topological Data Analysis, meant to be a highly modular library with traits to define algebraic properties on any object. It has the capability to return cycle optimizations alongside with a great amount of informations about the simplices involved in that cycle. 
+
+Some of the computational results of OAT take a long time to calculate, so my efforts to date have focused on finding ways to save these objects. Once compiled to a Python library, this one object, a `FactoredBoundaryMatrixVr`, cannot be saved using either pickle or dill or any other method. 
+
+Next was to try within Rust, to use Serde to Serialize and Deserialize each object. Unfortunately, this requires essentially fully recursively defined serialization and deserialization on every object. It becomes a cat-and-mouse game of fixing errors, adding trait bounds, derives, and so on. Unfortunately, there are some things which cannot be serialized. Structs with references don't work. Some struct wrapeprs, such as Flatten within Iterator, do not have a serialization. Even though Iterator does! `Flatten<Iterator>` is just an iterator!! Ugh. 
+
+The complicated data results are actually largely stored in the U-match decomposition (a matrix factorization), so my next effort will be to work on saving that data. It may involve some slight algorithmic changes. 
+
+I actually really like Rust so far!!
+
 :::
 
 ::::::

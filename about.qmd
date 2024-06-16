@@ -6,4 +6,4 @@ title: "About"
 #         about: trestles
 ---
 
-About this site
+This site was produced using Quarto so I had to learn only minimal HTML and CSS. It is hosted on my personal github page. 

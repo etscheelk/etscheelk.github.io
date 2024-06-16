@@ -1,6 +1,6 @@
 ---
 title: Projects
-date: 2024-05-22 
+date: 2024-06-15 
 description: Previous Work
 # title-block-banner: "blue"
 published-title: Last updated
@@ -30,6 +30,20 @@ Projects in bold labeled with 🚧 are still under construction or in-progress.
 
 ## Key Notes
 
+::::::{.grid}
+
+:::{.g-col-8 .g-start-2}
+
+I do almost all of my programming on Linux. It's just easier there. I use Windows Subsystem for Linux (WSL2) in order to have both Windows and Ubuntu (jammy), still using VSCode. So I only get a terminal for Linux but I've really enjoyed it and it has really improved both my typing speed and my ability to use the terminal, which I typically prefer to use. 
+
+It's actually kind of crazy, I am also able to access all my Windows files with my bash shell. Therefore, when I want to do some things that are just easier in the terminal, I just keep using bash but on my Windows files.
+
+One of my favorite CLIs is `fzf`, a fuzzy search on directories. 
+
+:::
+
+::::::
+
 ## **Parallel Boids** 
 
 {{< include projects/boids.qmd >}}
@@ -38,17 +52,62 @@ Projects in bold labeled with 🚧 are still under construction or in-progress.
 
 {{< include projects/dirview.qmd >}}
 
+## **Rust Work**
+
+See @sec-topo-research. I've been learning and using Rust to contribute to a Topological Data Analysis Crate called OAT (Open Applied Topology).
+
+Now, the lead dev of this library had said before Rust was an easy language to learn, and I disagreed.
+Me disagreeing doesn't mean I didn't like the language--in fact I've come to really like it. I really like its trait system, for one. Anyway, I won't linger too long on the specifics. 
+
+It's really satisfying implementing generic data structures! (who knew). Instead of doing a HashMap default-get with `.entry().and_modify(...).or_insert(...)`, why don't I write a new trait for HashMap to offer the same implementation? I know that's nothing crazy, but still. The OAT library I've been working on is entirely written in generics in order to offer modularity and flexibility for operations on different objects. For example, an entry of a matrix will be required to have an algebraic ring defining the operations on said objects. And so on, through a maze of dependent objects. 
+
+The Rust analyzer is an amazing tool. 
+
+The lead dev Greg and I spent three hours over zoom tracing a bug that led to occasional crashes within the compiled Python library. It turned out to be some confusion about some custom-defined order operators, a minor or major view ascending on a matrix, some reverse iterators, and another iterator which required a strict ascent on its data. The solution? Comment out the lines that reversed those iterators. 
+
 ## **Cartoon Graphics Outline Shader**
 
-{{< include projects/NPRoutline.qmd >}} 
+<!-- {{< include projects/NPRoutline.qmd >}}  -->
 
-## **Retuna**
 
+
+## **Retuna 🐟**      
+  
 {{< include projects/retuna.qmd >}}
 
-## **Chapel study and writing** 🚧
+## **Chapel Programming Languages Study**
 
-{{< include projects/chapel.qmd >}}
+Due to my interest in continuing my learning in parallel programming, I got involved in an independent study for the duration of my final semester at Macalester. In this time I studied and learned the Chapel programming language and wrote an introductory chapter on the language which will be included within the intermediate or advanced PDC textbooks on [learnpdc.org](https://learnpdc.org).
+
+Chapel is a programming language built to provide accessible parallel programming. What required compiler directives, other libraries, and intensive thought in C or C++ is now accessible through simple language keywords and helpful abstractions. Chapel is also intended to be easy to pick up and to be familiar to Python programmers, while still being a fast, scalable, statically typed language. Go to the [Chapel home page](https://chapel-lang.org) for more information.
+
+Installation for me required building from source. 
+
+The best thing I did with Chapel was create fractal images, see below @sec-fractals for more info.
+
+One of my favorite features in Chapel (besides the obvious) is the implementation of `config` variables. Write `config var N: uint(32) = 100;` and now you have a runtime commandline option accessed with `--N=...`.
+
+<!-- {{< include projects/chapel.qmd >}} -->
+
+## **Fractals in Chapel** {#sec-fractals}
+
+Inspired by a talk Professor Paul Cantrell gave titled "Animating Fractals for Fun and No Profit". 
+
+This method involves the effects of a polar to rectangular coordinates transform, or vice-versa. Given a random starting position, transform it randomly polar->rectangular or rectangular->polar somewhere in the range of one to ten billion times, saving it to a pixel for each position. 
+
+The preliminary method to speed this up, same as in Paul's journey, is to speed up the random number generation. Since there are only two possible paths, you can utilize the bits of a random 64-bit integer. Next step was to pregenerate the random numbers. Because this program was written in Chapel, parallelizing it was as simple as writing `forall` in place of a `for` in the correct spot. 
+
+Through some happy mistakes, I managed to create some alternative results of the fractals. The image is an array of atomic integers essentially functioning as a CCD camera sent to an exterior function (now in Chapel source) to save the array to a `.bmp`. Since it is like a CCD, the image is greyscale. Color is introduced by myself in art programs. 
+
+:::{#fig-fractal-evergreen}
+
+<embed src=res/fractals/evergreen.png width=100%> </embed>
+
+Evergreen
+
+:::
+
+See more in the [dedicated page for art](./fractal-art.qmd).
 
 ## **Paradise Lost: The Text Adventure**
 
@@ -56,7 +115,7 @@ Projects in bold labeled with 🚧 are still under construction or in-progress.
 
 ## **Dogger**
 
-{{< include projects/dogger.qmd >}}
+{{< include projects/dogger.qmd >}}        
 
 
 ## **Budgie's Adventure in Solitude** (a game)
@@ -73,7 +132,7 @@ This is for any smaller projects I've worked on that I'll only shortly mention
 
 {{< include projects/metrics.qmd >}}  
 
-## **Topology Research Assistant** 🚧 
+## **Topology Research Assistant** 🚧 {#sec-topo-research}
 
 {{< include projects/topora.qmd >}}  
 

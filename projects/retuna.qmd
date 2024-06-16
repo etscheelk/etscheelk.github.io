@@ -1,3 +1,66 @@
-Something
+<!-- Something
 
-more more more!
+more more more! -->
+
+::::::{.grid}
+
+:::{.g-col-10 .g-start-2}
+
+Retuna is an eartraining app which fills the gaps left by other eartraining apps. As part of a semester-long development cycle, we collaborated as a team to develop a game in Godot. We planned a project timeline and identified a minimum viable product. In the end, we published game on itch.io and ensured compatibility with alternative input methods. As a group of three, we had to manage the division of labor, handle communication between teammates, and, of course, solve merge conflicts. 
+
+[GitHub  Repository <i class="bi bi-github"></i>](https://github.com/Sniggiho/COMP225-Reluna)
+
+[Play on Itch.io <i class="bi bi-dpad-fill"></i>](https://sniggiho.itch.io/retuna)
+
+#### Description
+
+As a game, the game play window will have a set of notes in a melody, and some number of them are detuned by some amount. The measure of "detune" is in cents, and 50 cents out of tune is the most you can be before you're just approaching another note. Therefore, we have fine-grained control over the detune of the notes, which can provide extra difficulty. More notes can also provide difficulty.
+
+The player can listen to the melody as many times as they want and may individually select notes to replay them. Once the player makes their decision, they may check their solution. They may attempt as many times as they wish.
+
+:::{#fig-retuna-game-window}
+
+<embed src=res/retuna0.png width=90%> </embed>
+
+Retuna main game window
+
+:::
+
+:::{#fig-retuna-freeplay-settings}
+
+<embed src=res/retuna1.png width=90%> </embed>
+
+Retuna freeplay settings window
+
+:::
+
+#### Work
+
+I had some minimal previous experience with Godot, but we picked it as our platform for several reasons. Godot already had pre-made nodes which handled audio, so we were readily able to play the notes we needed, rather than having to install strange, underdocumented libraries. We also wished to avoid Javascript for similar reasons--anyway, Godot was already incredibly portable to almost every platform. Therefore, gladly, we were able to publish our polished game on itch.io.
+
+
+As a success story, I'm not a musician and I greatly improved at telling when notes were out of tune
+
+#### Challenges
+
+One of the biggest challenges of programming in Godot was figuring out the proper programmatic structure. What has what as a child and how do we send information between them? Godot has a very tree-centric structure, so it was difficult to disambiguate all the different nodes. 
+
+#### My work
+
+The freeplay setting select menu is entirely my own effort. I created the custom sliders, and I'm really proud of how one slider will impact a different slider. Additionally, since the entire game had to be navigable with keyboard or controller, so did the freeplay settings. We had to make some compromises due to the limitation that a horizontal slider, when selected, is adjusted with left and right. 
+
+Oh yeah, and to color the text differently based on the slider bar's position, I had to write a shader, haha.
+
+Within the main game window, I implemented the functionality for placing notes, the play bar, and the playbar playing the notes. All the freeplay settings had to be set every time the main game window was loaded. Additionally, I made it so freeplay settings kept their values when going back to the options. That was actually kind of a pain. 
+
+:::{#fig-retuna-credits}
+
+<embed src=res/retuna2.png width = 55%> </embed>
+
+Yes the name is a pun and it's an amazing one. 
+
+:::
+
+:::
+
+::::::

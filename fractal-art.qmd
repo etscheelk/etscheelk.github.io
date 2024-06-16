@@ -1,0 +1,94 @@
+---
+title: Fractal Art
+date: 2024-06-15
+engine: knitr
+grid:
+    body-width: 900px
+    # sidebar-width: 0%
+    # gutter-width: 0%
+author: "Ethan Scheelk"
+toc: false
+toc-location: body
+center: true
+abstract: These are the colored outputs of an algorithm which generates these fractals, where one billion points are repeatedly and randomly transformed. There are several input parameters to control as well as some alternate methods of generation. The output is greyscale, where color is added by myself in art programs. See [Projects / Fractals in Chapel](./projects.qmd#fractals-in-chapel) for more info.
+---
+
+:::{#fig-fractal-evergreen}
+
+<embed src=res/fractals/Evergreen.png width=100%> </embed>
+
+Evergreen
+
+:::
+
+:::{#fig-fractal-fusion}
+
+<embed src=res/fractals/Fusion.png width=100%> </embed>
+
+Fusion
+
+:::
+
+:::{#fig-fractal-cataclysm}
+
+<embed src=res/fractals/Cataclysm.png width=100%> </embed>
+
+Cataclysm
+
+:::
+
+:::{#fig-fractla-chalkart}
+
+<embed src=res/fractals/ChalkArt.png width=100%> </embed>
+
+Chalk Art
+
+:::
+
+:::{#fig-fractal-eye-benv-univ}
+
+<embed src=res/fractals/Eye-of-the-benovolent-universe.png width=100%> </embed>
+
+Eye of the Benevolent Universe
+
+:::
+
+:::{#fig-fractal-seahorse}
+
+<embed src=res/fractals/Seahorse.png width=100%> </embed>
+
+Memories of Seahorse
+
+:::
+
+:::{#fig-fractal-ghost-lens}
+
+<embed src=res/fractals/GhostInTheLens.png width=100%> </embed>
+
+Ghost in the Lens
+
+:::
+
+:::{#fig-fractal-horizon}
+
+<embed src=res/fractals/Horizon.png width=100%> </embed>
+
+Horizon
+
+:::
+
+:::{#fig-fractals-malice}
+
+<embed src=res/fractals/Malice.png width=100%> </embed>
+
+Malice
+
+:::
+
+:::{#fig-fractals-mana}
+
+<embed src=res/fractals/Mana.png width=100%> </embed>
+
+Mana
+
+:::

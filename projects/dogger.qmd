@@ -1,3 +1,65 @@
 <!-- ## **Dogger** -->
 
-Dogger is a version of Frogger where you play as a dog who must retrieve tennis balls your owner has thrown too far. 
+Dogger is a version of Frogger where you play as a dog who must retrieve tennis balls your owner has thrown too far. I made this as part of a group in a Java class sophomore year of college. 
+
+::::::{.grid}
+
+:::{.g-col-6}
+
+:::{#fig-dogger-main}
+
+<embed src=res/dogger0.png width=100%> </embed>
+
+Main menu of Dogger
+
+:::
+
+:::
+
+:::{.g-col-6}
+
+:::{#fig-dogger-play}
+
+<embed src=res/dogger3.png width=100%> </embed>
+
+Play window of Dogger
+
+:::
+
+:::
+
+::::::
+
+The dog's name is Chaucer Bandogrick III. He doesn't die, he just gets hurt. 
+
+I created the animations for the dog, alongside the tileset. My groupmate Dan made the vehicles and he did a fantastic job. 
+
+::::::{.grid}
+
+:::{.g-col-6}
+
+:::{#fig-dogger-win}
+
+<embed src=res/dogger2.png width=100%> </embed>
+
+The win-screen of Dogger.
+
+:::
+
+:::
+
+:::{.g-col-6}
+
+:::{#fig-dogger-lose}
+
+<embed src=res/dogger1.png width=100%> </embed>
+
+The lose-screen of Dogger.
+
+:::
+
+:::
+
+::::::
+
+This one was just a lot of fun to make. And it's another game with a name pun. 
