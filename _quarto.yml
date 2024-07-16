@@ -31,13 +31,14 @@ website:
     contents:
       - text: "Home"
         href: index.qmd 
-      - about.qmd
+      - projects.qmd
       - text: "---"
+      - text: "About This Site "
+        href: about.qmd
       # - section: "Home"
       #   contents: 
       #     - index.qmd
       #     - about.qmd
-      - projects.qmd
       # - section: "Projects"
       #   contents: 
       #     - projects/overview.qmd
@@ -50,10 +51,10 @@ website:
     left:
       - href: index.qmd
         text: "Home"
-      - href: about.qmd
-        text: "About"
       - href: "projects.qmd"
         text: "Projects"
+      - href: about.qmd
+        text: "About This Site"
     # left:
     #   - href: index.qmd
     #     text: Home
@@ -97,6 +98,3 @@ format:
       body-width: 1200px
     smooth-scroll: true
     # backgroundcolor: Gainsboro
-
-
-

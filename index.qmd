@@ -1,20 +1,25 @@
 ---
+main-image: res/gradme.jpg
 title: ""
 grid: 
   body-width: 900px
 about: 
-    id: intro-heading
-    template: trestles
-    image: res/gradme.jpg
-    image-width: 20em
-    image-alt: "Graduation photo of me, 2024-05-11. Cap and gown, in front of red tulips."
-    links: 
-      - icon: envelope
-        href: mailto:ethanScheelk@gmail.com
-      - icon: github
-        href: https://github.com/etscheelk
-      - icon: linkedin
-        href: https://www.linkedin.com/in/ethan-scheelk-507717272/
+  id: intro-heading
+  template: trestles
+  image: res/casualme.jpg
+  image-width: 20em
+  # image-alt: "Graduation photo of me, 2024-05-11. Cap and gown, in front of red tulips."
+  links: 
+    - icon: envelope
+      href: mailto:ethanScheelk@gmail.com
+    - icon: github
+      href: https://github.com/etscheelk
+    - icon: linkedin
+      href: https://www.linkedin.com/in/ethan-scheelk-507717272/
+abstract-title: 
+  Links
+abstract: 
+  Resume<br>[<i class="bi bi-file-earmark-person-fill fs-1"></i> ](res/EthanResume-2024-06-18.pdf){target="_blank"}
 ---
 
 <!-- This is a Quarto website.
@@ -28,7 +33,15 @@ I'm Ethan Scheelk and I'm a 2024 graduate with Computer Science and Mathematics 
 
 My career and programming interests lie in or around systems programming---to be specific, programming with respect to the hardware it will be running on. So, I love using lower level languages like C and interacting with Linux. 
 
+<!-- :::{.center}
+
+test
+
+::: -->
+
 :::
+
+
 
 <!-- ::: {.grid} -->
 
