@@ -102,7 +102,7 @@ Through some happy mistakes, I managed to create some alternative results of the
 :::{#fig-fractal-evergreen}
 
 <embed src=res\fractals\Evergreen.png width=100%> </embed>
-           <!-- res\fractals\Evergreen.png -->
+           
 Evergreen
 
 :::

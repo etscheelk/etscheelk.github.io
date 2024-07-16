@@ -6,7 +6,7 @@ grid:
 about: 
   id: intro-heading
   template: trestles
-  image: res/casualme.jpg
+  image: res/casualme-small.jpg
   image-width: 20em
   # image-alt: "Graduation photo of me, 2024-05-11. Cap and gown, in front of red tulips."
   links: 
